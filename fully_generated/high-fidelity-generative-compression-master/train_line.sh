@@ -1,0 +1,1 @@
+ nohup python3 train.py --model_type compression_gan --regime low --warmstart -ckpt models/hific_low.pt -nrb 9 -norm > output_compression_fake.log 2>&1&

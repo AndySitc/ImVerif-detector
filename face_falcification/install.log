@@ -1,0 +1,1624 @@
+Using pip 25.1 from /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/pip (python 3.10)
+Requirement already satisfied: absl-py==2.2.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2.2.2)
+Requirement already satisfied: accelerate==1.6.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (1.6.0)
+Collecting albumentations (from -r requirements.txt (line 4))
+  Obtaining dependency information for albumentations from https://files.pythonhosted.org/packages/37/4c/296bddc025c5cda060b9b0f4d18ece2daf60f627774127c90bb1016a657e/albumentations-2.0.6-py3-none-any.whl.metadata
+  Using cached albumentations-2.0.6-py3-none-any.whl.metadata (43 kB)
+Requirement already satisfied: certifi==2025.1.31 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 5)) (2025.1.31)
+Requirement already satisfied: charset-normalizer==3.4.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 6)) (3.4.1)
+Requirement already satisfied: clip in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 7)) (0.2.0)
+Requirement already satisfied: contourpy==1.3.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 8)) (1.3.1)
+Requirement already satisfied: efficientnet-pytorch==0.7.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 9)) (0.7.1)
+Requirement already satisfied: einops==0.8.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 10)) (0.8.1)
+Requirement already satisfied: filelock==3.18.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 11)) (3.18.0)
+Requirement already satisfied: filterpy==1.4.5 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 12)) (1.4.5)
+Requirement already satisfied: fsspec==2025.3.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 13)) (2025.3.2)
+Requirement already satisfied: ftfy==6.3.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 14)) (6.3.1)
+Requirement already satisfied: fvcore==0.1.5.post20221221 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 15)) (0.1.5.post20221221)
+Requirement already satisfied: grpcio==1.71.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 16)) (1.71.0)
+Requirement already satisfied: huggingface-hub==0.30.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 17)) (0.30.2)
+Requirement already satisfied: idna==3.10 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 18)) (3.10)
+Requirement already satisfied: imageio==2.37.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 19)) (2.37.0)
+Requirement already satisfied: imgaug==0.4.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 20)) (0.4.0)
+Requirement already satisfied: imutils==0.5.4 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 21)) (0.5.4)
+Requirement already satisfied: iopath==0.1.10 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 22)) (0.1.10)
+Requirement already satisfied: jinja2==3.1.6 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 23)) (3.1.6)
+Requirement already satisfied: joblib==1.4.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 24)) (1.4.2)
+Requirement already satisfied: kornia==0.8.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 25)) (0.8.0)
+Requirement already satisfied: kornia-rs==0.1.8 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 26)) (0.1.8)
+Requirement already satisfied: lazy-loader==0.4 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 27)) (0.4)
+Requirement already satisfied: lmdb==1.6.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 28)) (1.6.2)
+Requirement already satisfied: loralib==0.1.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 29)) (0.1.2)
+Requirement already satisfied: markdown==3.7 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 30)) (3.7)
+Requirement already satisfied: markupsafe==3.0.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 31)) (3.0.2)
+Requirement already satisfied: matplotlib==3.10.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 32)) (3.10.1)
+Requirement already satisfied: mpmath==1.3.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 33)) (1.3.0)
+Requirement already satisfied: munch==4.0.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 34)) (4.0.0)
+Requirement already satisfied: numpy==2.2.4 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 35)) (2.2.4)
+Requirement already satisfied: nvidia-cublas-cu12==12.4.5.8 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 36)) (12.4.5.8)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.4.127 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 37)) (12.4.127)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.4.127 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 38)) (12.4.127)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.4.127 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 39)) (12.4.127)
+Requirement already satisfied: nvidia-cudnn-cu12==9.1.0.70 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 40)) (9.1.0.70)
+Requirement already satisfied: nvidia-cufft-cu12==11.2.1.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 41)) (11.2.1.3)
+Requirement already satisfied: nvidia-curand-cu12==10.3.5.147 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 42)) (10.3.5.147)
+Requirement already satisfied: nvidia-cusolver-cu12==11.6.1.9 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 43)) (11.6.1.9)
+Requirement already satisfied: nvidia-cusparse-cu12==12.3.1.170 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 44)) (12.3.1.170)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.6.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 46)) (2.21.5)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.4.127 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 47)) (12.4.127)
+Requirement already satisfied: nvidia-nvtx-cu12==12.4.127 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 48)) (12.4.127)
+Requirement already satisfied: opencv-python==4.11.0.86 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 49)) (4.11.0.86)
+Requirement already satisfied: opencv-python-headless==4.11.0.86 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 50)) (4.11.0.86)
+Requirement already satisfied: pandas==2.2.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 51)) (2.2.3)
+Requirement already satisfied: pillow==11.1.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 52)) (11.1.0)
+Requirement already satisfied: portalocker==3.1.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 53)) (3.1.1)
+Requirement already satisfied: pretrainedmodels==0.7.4 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 54)) (0.7.4)
+Requirement already satisfied: prettytable==3.16.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 55)) (3.16.0)
+Requirement already satisfied: protobuf==6.30.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 56)) (6.30.2)
+Requirement already satisfied: psutil==7.0.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 57)) (7.0.0)
+Requirement already satisfied: pyparsing==3.2.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 58)) (3.2.3)
+Requirement already satisfied: python-dateutil==2.9.0.post0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 59)) (2.9.0.post0)
+Requirement already satisfied: pytz==2025.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 60)) (2025.2)
+Requirement already satisfied: pyyaml==6.0.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 61)) (6.0.2)
+Requirement already satisfied: regex==2024.11.6 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 62)) (2024.11.6)
+Requirement already satisfied: requests==2.32.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 63)) (2.32.3)
+Requirement already satisfied: safetensors==0.5.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 64)) (0.5.3)
+Requirement already satisfied: scikit-image==0.25.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 65)) (0.25.2)
+Requirement already satisfied: scikit-learn==1.6.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 66)) (1.6.1)
+Requirement already satisfied: scipy==1.15.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 67)) (1.15.2)
+Requirement already satisfied: seaborn==0.13.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 68)) (0.13.2)
+Requirement already satisfied: segmentation-models-pytorch==0.4.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 69)) (0.4.0)
+Requirement already satisfied: shapely==2.1.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 70)) (2.1.0)
+Requirement already satisfied: simplejson==3.20.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 71)) (3.20.1)
+Requirement already satisfied: six==1.17.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 72)) (1.17.0)
+Requirement already satisfied: stringzilla==3.12.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 73)) (3.12.3)
+Requirement already satisfied: sympy==1.13.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 74)) (1.13.1)
+Requirement already satisfied: tabulate==0.9.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 75)) (0.9.0)
+Requirement already satisfied: tensorboard==2.19.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 76)) (2.19.0)
+Requirement already satisfied: tensorboard-data-server==0.7.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 77)) (0.7.2)
+Requirement already satisfied: termcolor==3.0.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 78)) (3.0.1)
+Requirement already satisfied: threadpoolctl==3.6.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 79)) (3.6.0)
+Requirement already satisfied: timm==1.0.15 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 80)) (1.0.15)
+Requirement already satisfied: tokenizers==0.21.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 81)) (0.21.1)
+Requirement already satisfied: torch==2.6.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 82)) (2.6.0)
+Requirement already satisfied: torchaudio in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 83)) (2.6.0)
+Requirement already satisfied: torchtoolbox==0.1.8.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 84)) (0.1.8.2)
+Requirement already satisfied: torchvision==0.21.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 85)) (0.21.0)
+Requirement already satisfied: tqdm==4.61.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 86)) (4.61.0)
+Requirement already satisfied: transformers==4.51.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 87)) (4.51.1)
+Requirement already satisfied: triton==3.2.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 88)) (3.2.0)
+Requirement already satisfied: tzdata==2025.2 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 89)) (2025.2)
+Requirement already satisfied: urllib3==2.3.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 90)) (2.3.0)
+Requirement already satisfied: werkzeug==3.1.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 91)) (3.1.3)
+Requirement already satisfied: yacs==0.1.8 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from -r requirements.txt (line 92)) (0.1.8)
+Collecting cmake (from -r requirements.txt (line 93))
+  Obtaining dependency information for cmake from https://files.pythonhosted.org/packages/91/96/2671d7f3612c4449affc956542b25d9193efd8026dbc8ab6b3498f5cede3/cmake-4.0.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading cmake-4.0.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.3 kB)
+Collecting dlib==19.24.6 (from -r requirements.txt (line 94))
+  Using cached dlib-19.24.6.tar.gz (3.4 MB)
+  Preparing metadata (setup.py): started
+  Running command python setup.py egg_info
+  running egg_info
+  creating /tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info
+  writing /tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info/dependency_links.txt
+  writing top-level names to /tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  no previously-included directories found matching 'tools/python/build*'
+  no previously-included directories found matching 'dlib/cmake_utils/*/build*'
+  no previously-included directories found matching 'dlib/test'
+  warning: no previously-included files matching '*.pyc' found anywhere in distribution
+  writing manifest file '/tmp/pip-pip-egg-info-7qj0avdd/dlib.egg-info/SOURCES.txt'
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: packaging>=20.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from accelerate==1.6.0->-r requirements.txt (line 2)) (25.0)
+Requirement already satisfied: wcwidth in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from ftfy==6.3.1->-r requirements.txt (line 14)) (0.2.13)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from huggingface-hub==0.30.2->-r requirements.txt (line 17)) (4.13.2)
+Requirement already satisfied: cycler>=0.10 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from matplotlib==3.10.1->-r requirements.txt (line 32)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from matplotlib==3.10.1->-r requirements.txt (line 32)) (4.57.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from matplotlib==3.10.1->-r requirements.txt (line 32)) (1.4.8)
+Requirement already satisfied: networkx>=3.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from scikit-image==0.25.2->-r requirements.txt (line 65)) (3.4.2)
+Requirement already satisfied: tifffile>=2022.8.12 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from scikit-image==0.25.2->-r requirements.txt (line 65)) (2025.3.30)
+Requirement already satisfied: setuptools>=41.0.0 in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from tensorboard==2.19.0->-r requirements.txt (line 76)) (78.1.1)
+Requirement already satisfied: pyarrow in /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages (from torchtoolbox==0.1.8.2->-r requirements.txt (line 84)) (20.0.0)
+Collecting pydantic>=2.9.2 (from albumentations->-r requirements.txt (line 4))
+  Obtaining dependency information for pydantic>=2.9.2 from https://files.pythonhosted.org/packages/e7/12/46b65f3534d099349e38ef6ec98b1a5a81f42536d17e0ba382c28c67ba67/pydantic-2.11.4-py3-none-any.whl.metadata
+  Using cached pydantic-2.11.4-py3-none-any.whl.metadata (66 kB)
+Collecting albucore==0.0.24 (from albumentations->-r requirements.txt (line 4))
+  Obtaining dependency information for albucore==0.0.24 from https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl.metadata
+  Using cached albucore-0.0.24-py3-none-any.whl.metadata (5.3 kB)
+Collecting simsimd>=5.9.2 (from albucore==0.0.24->albumentations->-r requirements.txt (line 4))
+  Using cached simsimd-6.2.1.tar.gz (165 kB)
+  Installing build dependencies: started
+  Running command pip subprocess to install build dependencies
+  Using pip 25.1 from /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/pip (python 3.10)
+  Collecting setuptools>=42
+    Obtaining dependency information for setuptools>=42 from https://files.pythonhosted.org/packages/8b/f6/126c9309c8fe93e5d6bb850593cd58d591daf2da45cc78b61e48d8d95879/setuptools-80.1.0-py3-none-any.whl.metadata
+    Using cached setuptools-80.1.0-py3-none-any.whl.metadata (6.5 kB)
+  Using cached setuptools-80.1.0-py3-none-any.whl (1.2 MB)
+  Installing collected packages: setuptools
+  Successfully installed setuptools-80.1.0
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Running command Getting requirements to build wheel
+  /tmp/pip-build-env-va5edovm/overlay/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running egg_info
+  writing simsimd.egg-info/PKG-INFO
+  writing dependency_links to simsimd.egg-info/dependency_links.txt
+  writing top-level names to simsimd.egg-info/top_level.txt
+  reading manifest file 'simsimd.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file 'simsimd.egg-info/SOURCES.txt'
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Running command Preparing metadata (pyproject.toml)
+  /tmp/pip-build-env-va5edovm/overlay/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running dist_info
+  creating /tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info
+  writing /tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info/PKG-INFO
+  writing dependency_links to /tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info/dependency_links.txt
+  writing top-level names to /tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info/top_level.txt
+  writing manifest file '/tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info/SOURCES.txt'
+  reading manifest file '/tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file '/tmp/pip-modern-metadata-qtghvv_u/simsimd.egg-info/SOURCES.txt'
+  creating '/tmp/pip-modern-metadata-qtghvv_u/simsimd-6.2.1.dist-info'
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting annotated-types>=0.6.0 (from pydantic>=2.9.2->albumentations->-r requirements.txt (line 4))
+  Obtaining dependency information for annotated-types>=0.6.0 from https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl.metadata
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.33.2 (from pydantic>=2.9.2->albumentations->-r requirements.txt (line 4))
+  Obtaining dependency information for pydantic-core==2.33.2 from https://files.pythonhosted.org/packages/31/0d/c8f7593e6bc7066289bbc366f2235701dcbebcd1ff0ef8e64f6f239fb47d/pydantic_core-2.33.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached pydantic_core-2.33.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic>=2.9.2->albumentations->-r requirements.txt (line 4))
+  Obtaining dependency information for typing-inspection>=0.4.0 from https://files.pythonhosted.org/packages/31/08/aa4fdfb71f7de5176385bd9e90852eaf6b5d622735020ad600f2bab54385/typing_inspection-0.4.0-py3-none-any.whl.metadata
+  Using cached typing_inspection-0.4.0-py3-none-any.whl.metadata (2.6 kB)
+Using cached albumentations-2.0.6-py3-none-any.whl (332 kB)
+Using cached albucore-0.0.24-py3-none-any.whl (15 kB)
+Downloading cmake-4.0.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (27.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.9/27.9 MB 41.9 MB/s eta 0:00:00
+Using cached pydantic-2.11.4-py3-none-any.whl (443 kB)
+Using cached pydantic_core-2.33.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached typing_inspection-0.4.0-py3-none-any.whl (14 kB)
+Building wheels for collected packages: dlib, simsimd
+  DEPRECATION: Building 'dlib' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'dlib'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for dlib (setup.py): started
+  Running command python setup.py bdist_wheel
+  running bdist_wheel
+  running build
+  running build_ext
+  Building extension for Python 3.10.11 (main, May 16 2023, 00:28:57) [GCC 11.2.0]
+  Invoking CMake setup: 'cmake /tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/tools/python -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/build/lib.linux-x86_64-cpython-310 -DPYTHON_EXECUTABLE=/home/sitcharn/anaconda3/envs/Sahar/bin/python -DDLIB_USE_FFMPEG=OFF -DCMAKE_BUILD_TYPE=Release'
+  -- The C compiler identification is GNU 6.5.0
+  -- The CXX compiler identification is GNU 6.5.0
+  -- Check for working C compiler: /usr/bin/cc
+  -- Check for working C compiler: /usr/bin/cc -- works
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Check for working CXX compiler: /usr/bin/c++
+  -- Check for working CXX compiler: /usr/bin/c++ -- works
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- pybind11 v2.12.0
+  -- Found PythonInterp: /home/sitcharn/anaconda3/envs/Sahar/bin/python (found suitable version "3.10.11", minimum required is "3.6")
+  -- Found PythonLibs: /home/sitcharn/anaconda3/envs/Sahar/lib/libpython3.10.so
+  -- Performing Test HAS_FLTO
+  -- Performing Test HAS_FLTO - Success
+  -- Using CMake version: 3.10.2
+  -- Compiling dlib version: 19.24.6
+  -- SSE4 instructions can be executed by the host processor.
+  -- AVX instructions can be executed by the host processor.
+  -- Enabling AVX instructions
+  -- Looking for pthread.h
+  -- Looking for pthread.h - found
+  -- Looking for pthread_create
+  -- Looking for pthread_create - not found
+  -- Looking for pthread_create in pthreads
+  -- Looking for pthread_create in pthreads - not found
+  -- Looking for pthread_create in pthread
+  -- Looking for pthread_create in pthread - found
+  -- Found Threads: TRUE
+  -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+  -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+  -- Looking for gethostbyname
+  -- Looking for gethostbyname - found
+  -- Looking for connect
+  -- Looking for connect - found
+  -- Looking for remove
+  -- Looking for remove - found
+  -- Looking for shmat
+  -- Looking for shmat - found
+  -- Looking for IceConnectionNumber in ICE
+  -- Looking for IceConnectionNumber in ICE - found
+  -- Found X11: /usr/lib/x86_64-linux-gnu/libX11.so
+  -- Found system copy of libpng: /usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libz.so
+  -- Found system copy of libjpeg: /usr/lib/x86_64-linux-gnu/libjpeg.so
+  -- Searching for JPEG XL
+  -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
+  -- Checking for modules 'libjxl;libjxl_cms;libjxl_threads'
+  --   No package 'libjxl' found
+  --   No package 'libjxl_cms' found
+  --   No package 'libjxl_threads' found
+   *****************************************************************************
+   *** No JPEG XL libraries found.                                           ***
+   *** On Ubuntu 23.04 and newer you can install them by executing           ***
+   ***    sudo apt install libjxl-dev                                        ***
+   ***                                                                       ***
+   *** Otherwise, you can find precompiled packages here:                    ***
+   ***    https://github.com/libjxl/libjxl/releases                          ***
+   *****************************************************************************
+  -- Searching for BLAS and LAPACK
+  -- Searching for BLAS and LAPACK
+  -- Checking for module 'cblas'
+  --   No package 'cblas' found
+  -- Checking for module 'lapack'
+  --   Found lapack, version 3.10.3
+  -- Looking for cblas_ddot
+  -- Looking for cblas_ddot - not found
+  -- Looking for sys/types.h
+  -- Looking for sys/types.h - found
+  -- Looking for stdint.h
+  -- Looking for stdint.h - found
+  -- Looking for stddef.h
+  -- Looking for stddef.h - found
+  -- Check size of void*
+  -- Check size of void* - done
+  -- Found LAPACK library
+  -- Found ATLAS BLAS library
+  -- Looking for cblas_ddot
+  -- Looking for cblas_ddot - found
+  -- Looking for sgesv
+  -- Looking for sgesv - not found
+  -- Looking for sgesv_
+  -- Looking for sgesv_ - not found
+  -- Found CUDA: /usr (found suitable version "9.1", minimum required is "7.5")
+  -- Looking for cuDNN install...
+  -- Found cuDNN: /usr/local/cuda/lib64/libcudnn.so
+  -- Building a CUDA test project to see if your compiler is compatible with CUDA...
+  -- Building a cuDNN test project to check if you have the right version of cuDNN installed...
+  -- Enabling CUDA support for dlib.  DLIB WILL USE CUDA, compute capabilities: 50
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: /tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/build/temp.linux-x86_64-cpython-310
+  Invoking CMake build: 'cmake --build . --config Release -- -j8'
+  [  2%] Building NVCC (Device) object dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cuda_dlib.cu.o
+  [  2%] Building NVCC (Device) object dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cusolver_dlibapi.cu.o
+  Segmentation fault (core dumped)
+  CMake Error at dlib_generated_cusolver_dlibapi.cu.o.Release.cmake:279 (message):
+    Error generating file
+    /tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/build/temp.linux-x86_64-cpython-310/dlib_build/CMakeFiles/dlib.dir/cuda/./dlib_generated_cusolver_dlibapi.cu.o
+
+
+  dlib_build/CMakeFiles/dlib.dir/build.make:70: recipe for target 'dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cusolver_dlibapi.cu.o' failed
+  make[2]: *** [dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cusolver_dlibapi.cu.o] Error 1
+  make[2]: *** Waiting for unfinished jobs....
+  Segmentation fault (core dumped)
+  CMake Error at dlib_generated_cuda_dlib.cu.o.Release.cmake:279 (message):
+    Error generating file
+    /tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/build/temp.linux-x86_64-cpython-310/dlib_build/CMakeFiles/dlib.dir/cuda/./dlib_generated_cuda_dlib.cu.o
+
+
+  dlib_build/CMakeFiles/dlib.dir/build.make:63: recipe for target 'dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cuda_dlib.cu.o' failed
+  make[2]: *** [dlib_build/CMakeFiles/dlib.dir/cuda/dlib_generated_cuda_dlib.cu.o] Error 1
+  CMakeFiles/Makefile2:140: recipe for target 'dlib_build/CMakeFiles/dlib.dir/all' failed
+  make[1]: *** [dlib_build/CMakeFiles/dlib.dir/all] Error 2
+  Makefile:83: recipe for target 'all' failed
+  make: *** [all] Error 2
+  Traceback (most recent call last):
+    File "<string>", line 2, in <module>
+    File "<pip-setuptools-caller>", line 35, in <module>
+    File "/tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/setup.py", line 243, in <module>
+      setup(
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup
+      return distutils.core.setup(**attrs)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 186, in setup
+      return run_commands(dist)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+      dist.run_commands()
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+      self.run_command(cmd)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/dist.py", line 1104, in run_command
+      super().run_command(command)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+      cmd_obj.run()
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/command/bdist_wheel.py", line 370, in run
+      self.run_command("build")
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 357, in run_command
+      self.distribution.run_command(command)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/dist.py", line 1104, in run_command
+      super().run_command(command)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+      cmd_obj.run()
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/command/build.py", line 135, in run
+      self.run_command(cmd_name)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/cmd.py", line 357, in run_command
+      self.distribution.run_command(command)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/dist.py", line 1104, in run_command
+      super().run_command(command)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+      cmd_obj.run()
+    File "/tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/setup.py", line 168, in run
+      self.build_extension(ext)
+    File "/tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/setup.py", line 209, in build_extension
+      subprocess.check_call(cmake_build, cwd=build_folder)
+    File "/home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/subprocess.py", line 369, in check_call
+      raise CalledProcessError(retcode, cmd)
+  subprocess.CalledProcessError: Command '['cmake', '--build', '.', '--config', 'Release', '--', '-j8']' returned non-zero exit status 2.
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: /home/sitcharn/anaconda3/envs/Sahar/bin/python -u -c '
+  exec(compile('"'"''"'"''"'"'
+  # This is <pip-setuptools-caller> -- a caller that pip uses to run setup.py
+  #
+  # - It imports setuptools before invoking setup.py, to enable projects that directly
+  #   import from `distutils.core` to work with newer packaging standards.
+  # - It provides a clear error message when setuptools is not installed.
+  # - It sets `sys.argv[0]` to the underlying `setup.py`, when invoking `setup.py` so
+  #   setuptools doesn'"'"'t think the script is `-c`. This avoids the following warning:
+  #     manifest_maker: standard file '"'"'-c'"'"' not found".
+  # - It generates a shim setup.py, for handling setup.cfg-only projects.
+  import os, sys, tokenize, traceback
+  
+  try:
+      import setuptools
+  except ImportError:
+      print(
+          "ERROR: Can not execute `setup.py` since setuptools failed to import in "
+          "the build environment with exception:",
+          file=sys.stderr,
+      )
+      traceback.print_exc()
+      sys.exit(1)
+  
+  __file__ = %r
+  sys.argv[0] = __file__
+  
+  if os.path.exists(__file__):
+      filename = __file__
+      with tokenize.open(__file__) as f:
+          setup_py_code = f.read()
+  else:
+      filename = "<auto-generated setuptools caller>"
+      setup_py_code = "from setuptools import setup; setup()"
+  
+  exec(compile(setup_py_code, filename, "exec"))
+  '"'"''"'"''"'"' % ('"'"'/tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/setup.py'"'"',), "<pip-setuptools-caller>", "exec"))' bdist_wheel -d /tmp/pip-wheel-h4sfvuty
+  cwd: /tmp/pip-install-o5jkhc4z/dlib_627d53518fcf4a15950df891b191eed1/
+  Building wheel for dlib (setup.py): finished with status 'error'
+  ERROR: Failed building wheel for dlib
+  Running setup.py clean for dlib
+  Running command python setup.py clean
+  running clean
+  removing 'build/temp.linux-x86_64-cpython-310' (and everything under it)
+  removing 'build/lib.linux-x86_64-cpython-310' (and everything under it)
+  'build/bdist.linux-x86_64' does not exist -- can't clean it
+  'build/scripts-3.10' does not exist -- can't clean it
+  removing 'build'
+  Building wheel for simsimd (pyproject.toml): started
+  Running command Building wheel for simsimd (pyproject.toml)
+  /tmp/pip-build-env-va5edovm/overlay/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: Apache Software License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  running bdist_wheel
+  running build
+  running build_py
+  running egg_info
+  writing simsimd.egg-info/PKG-INFO
+  writing dependency_links to simsimd.egg-info/dependency_links.txt
+  writing top-level names to simsimd.egg-info/top_level.txt
+  reading manifest file 'simsimd.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  adding license file 'LICENSE'
+  writing manifest file 'simsimd.egg-info/SOURCES.txt'
+  creating build/lib.linux-x86_64-cpython-310/simsimd
+  copying python/annotations/__init__.pyi -> build/lib.linux-x86_64-cpython-310/simsimd
+  copying python/annotations/py.typed -> build/lib.linux-x86_64-cpython-310/simsimd
+  running build_ext
+  building 'simsimd' extension
+  creating build/temp.linux-x86_64-cpython-310/c
+  creating build/temp.linux-x86_64-cpython-310/python
+  gcc -pthread -B /home/sitcharn/anaconda3/envs/Sahar/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/sitcharn/anaconda3/envs/Sahar/include -fPIC -O2 -isystem /home/sitcharn/anaconda3/envs/Sahar/include -fPIC -DSIMSIMD_NATIVE_F16=0 -DSIMSIMD_NATIVE_BF16=0 -DSIMSIMD_DYNAMIC_DISPATCH=1 -DSIMSIMD_TARGET_NEON=1 -DSIMSIMD_TARGET_NEON_F16=1 -DSIMSIMD_TARGET_NEON_BF16=1 -DSIMSIMD_TARGET_SVE=1 -DSIMSIMD_TARGET_SVE_F16=1 -DSIMSIMD_TARGET_SVE_BF16=1 -DSIMSIMD_TARGET_SVE2=1 -DSIMSIMD_TARGET_HASWELL=1 -DSIMSIMD_TARGET_SKYLAKE=1 -DSIMSIMD_TARGET_ICE=1 -DSIMSIMD_TARGET_GENOA=1 -DSIMSIMD_TARGET_SAPPHIRE=1 -DSIMSIMD_TARGET_TURIN=1 -DSIMSIMD_TARGET_SIERRA=0 -Iinclude -I/home/sitcharn/anaconda3/envs/Sahar/include/python3.10 -c c/lib.c -o build/temp.linux-x86_64-cpython-310/c/lib.o -std=c11 -O3 -ffast-math -fdiagnostics-color=always -fvisibility=default -fPIC -w -fopenmp
+  In file included from [01m[Kinclude/simsimd/simsimd.h:105:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/binary.h:267:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vpopcntdq")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512vpopcntdq")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/binary.h:[m[K In function ‘[01m[Ksimsimd_hamming_b8_ice[m[K’:
+  [01m[Kinclude/simsimd/binary.h:280:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a_vec, b_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:285:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a1_vec = [01;31m[K_mm512_loadu_epi8[m[K(a);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:286:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b1_vec = [01;31m[K_mm512_loadu_epi8[m[K(b);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:289:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a1_vec, b1_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:290:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a2_vec, b2_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:295:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a1_vec = [01;31m[K_mm512_loadu_epi8[m[K(a);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:296:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b1_vec = [01;31m[K_mm512_loadu_epi8[m[K(b);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:297:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a2_vec = [01;31m[K_mm512_loadu_epi8[m[K(a + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:298:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b2_vec = [01;31m[K_mm512_loadu_epi8[m[K(b + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:301:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a1_vec, b1_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:302:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a2_vec, b2_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:303:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor3_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a3_vec, b3_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:309:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a1_vec = [01;31m[K_mm512_loadu_epi8[m[K(a);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:310:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b1_vec = [01;31m[K_mm512_loadu_epi8[m[K(b);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:311:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a2_vec = [01;31m[K_mm512_loadu_epi8[m[K(a + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:312:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b2_vec = [01;31m[K_mm512_loadu_epi8[m[K(b + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:313:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a3_vec = [01;31m[K_mm512_loadu_epi8[m[K(a + 128);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:314:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b3_vec = [01;31m[K_mm512_loadu_epi8[m[K(b + 128);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:317:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a1_vec, b1_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:318:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a2_vec, b2_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:319:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor3_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a3_vec, b3_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:320:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i xor4_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_xor_si512(a4_vec, b4_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:336:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               a_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/binary.h:337:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/binary.h:341:57:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 2 of ‘[01m[K_mm512_add_epi64[m[K’
+           xor_count_vec = _mm512_add_epi64(xor_count_vec, [01;31m[K_mm512_popcnt_epi64[m[K(xor_vec));
+                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:45:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512fintrin.h:645:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_add_epi64[m[K (__m512i __A, __m512i __B)
+   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:105:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/binary.h:[m[K In function ‘[01m[Ksimsimd_jaccard_b8_ice[m[K’:
+  [01m[Kinclude/simsimd/binary.h:358:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a_vec, b_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:359:32:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a_vec, b_vec));
+                                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:365:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a1_vec = [01;31m[K_mm512_loadu_epi8[m[K(a);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:366:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b1_vec = [01;31m[K_mm512_loadu_epi8[m[K(b);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:369:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a1_vec, b1_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:370:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a1_vec, b1_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:371:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a2_vec, b2_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:372:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a2_vec, b2_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:378:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a1_vec = [01;31m[K_mm512_loadu_epi8[m[K(a);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:379:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b1_vec = [01;31m[K_mm512_loadu_epi8[m[K(b);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:380:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a2_vec = [01;31m[K_mm512_loadu_epi8[m[K(a + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:381:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b2_vec = [01;31m[K_mm512_loadu_epi8[m[K(b + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:384:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a1_vec, b1_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:385:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a1_vec, b1_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:386:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a2_vec, b2_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:387:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a2_vec, b2_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:388:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and3_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a3_vec, b3_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:389:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or3_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a3_vec, b3_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:397:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a1_vec = [01;31m[K_mm512_loadu_epi8[m[K(a);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:398:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b1_vec = [01;31m[K_mm512_loadu_epi8[m[K(b);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:399:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a2_vec = [01;31m[K_mm512_loadu_epi8[m[K(a + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:400:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b2_vec = [01;31m[K_mm512_loadu_epi8[m[K(b + 64);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:401:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i a3_vec = [01;31m[K_mm512_loadu_epi8[m[K(a + 128);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:402:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i b3_vec = [01;31m[K_mm512_loadu_epi8[m[K(b + 128);
+                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:405:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a1_vec, b1_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:406:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or1_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a1_vec, b1_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:407:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a2_vec, b2_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:408:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or2_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a2_vec, b2_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:409:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and3_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a3_vec, b3_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:410:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or3_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a3_vec, b3_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:411:34:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i and4_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_and_si512(a4_vec, b4_vec));
+                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:412:33:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+           __m512i or4_count_vec = [01;31m[K_mm512_popcnt_epi64[m[K(_mm512_or_si512(a4_vec, b4_vec));
+                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/binary.h:430:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               a_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/binary.h:431:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/binary.h:436:57:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 2 of ‘[01m[K_mm512_add_epi64[m[K’
+           and_count_vec = _mm512_add_epi64(and_count_vec, [01;31m[K_mm512_popcnt_epi64[m[K(and_vec));
+                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:45:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512fintrin.h:645:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_add_epi64[m[K (__m512i __A, __m512i __B)
+   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:105:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/binary.h:437:55:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 2 of ‘[01m[K_mm512_add_epi64[m[K’
+           or_count_vec = _mm512_add_epi64(or_count_vec, [01;31m[K_mm512_popcnt_epi64[m[K(or_vec));
+                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:45:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512fintrin.h:645:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_add_epi64[m[K (__m512i __A, __m512i __B)
+   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/curved.h:40:0[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:106[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_f32_skylake[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1290:21:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 ab_vec = [01;31m[K_mm512_setzero[m[K();
+                       [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_f32c_skylake[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1336:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 ab_real_vec = [01;31m[K_mm512_setzero[m[K();
+                            [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1337:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 ab_imag_vec = [01;31m[K_mm512_setzero[m[K();
+                            [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_vdot_f32c_skylake[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1373:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 ab_real_vec = [01;31m[K_mm512_setzero[m[K();
+                            [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1374:26:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 ab_imag_vec = [01;31m[K_mm512_setzero[m[K();
+                            [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1382:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K At top level:
+  [01m[Kinclude/simsimd/dot.h:1499:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512bf16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512bf16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_bf16_genoa[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1516:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(a_scalars);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1517:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(b_scalars);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1520:40:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+       ab_vec = _mm512_dpbf16_ps(ab_vec, ([01;31m[K__m512bh[m[K)(a_i16_vec), (__m512bh)(b_i16_vec));
+                                          [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1520:40:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_bf16c_genoa[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1538:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1553:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)a_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1554:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)b_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1557:50:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+       ab_real_vec = _mm512_dpbf16_ps(ab_real_vec, ([01;31m[K__m512bh[m[K)(_mm512_xor_si512(b_vec, sign_flip_vec)), (__m512bh)(a_vec));
+                                                    [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_vdot_bf16c_genoa[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1579:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1594:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)a_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1595:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)b_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1598:50:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+       ab_real_vec = _mm512_dpbf16_ps(ab_real_vec, ([01;31m[K__m512bh[m[K)(a_vec), (__m512bh)(b_vec));
+                                                    [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K At top level:
+  [01m[Kinclude/simsimd/dot.h:1615:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512fp16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512fp16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1622:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1632:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(a_scalars);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1633:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(b_scalars);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_f16c_sapphire[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1645:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_real_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1646:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_imag_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1654:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1669:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_vec [01;31m[K=[m[K _mm512_loadu_epi16(a_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1670:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_vec [01;31m[K=[m[K _mm512_loadu_epi16(b_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_vdot_f16c_sapphire[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1689:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_real_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1690:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_imag_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1698:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/dot.h:1713:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_vec [01;31m[K=[m[K _mm512_loadu_epi16(a_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1714:15:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_vec [01;31m[K=[m[K _mm512_loadu_epi16(b_pairs);
+                 [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K At top level:
+  [01m[Kinclude/simsimd/dot.h:1735:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vnni")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512vnni")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_i8_ice[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1761:16:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_vec [01;31m[K=[m[K _mm512_dpwssd_epi32(ab_i32_vec, a_i16_vec, b_i16_vec);
+                  [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:[m[K In function ‘[01m[Ksimsimd_dot_u8_ice[m[K’:
+  [01m[Kinclude/simsimd/dot.h:1799:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_low_vec [01;31m[K=[m[K _mm512_dpwssd_epi32(ab_i32_low_vec, a_i16_low_vec, b_i16_low_vec);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/dot.h:1800:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_high_vec [01;31m[K=[m[K _mm512_dpwssd_epi32(ab_i32_high_vec, a_i16_high_vec, b_i16_high_vec);
+                       [01;31m[K^[m[K
+  In file included from [01m[Kinclude/simsimd/curved.h:41:0[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:106[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_l2sq_f32_skylake[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1512:21:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 d2_vec = [01;31m[K_mm512_setzero[m[K();
+                       [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_cos_f32_skylake[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1579:21:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 ab_vec = [01;31m[K_mm512_setzero[m[K();
+                       [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:1580:21:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 a2_vec = [01;31m[K_mm512_setzero[m[K();
+                       [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:1581:21:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 b2_vec = [01;31m[K_mm512_setzero[m[K();
+                       [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K At top level:
+  [01m[Kinclude/simsimd/spatial.h:1672:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512bf16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512bf16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_l2sq_bf16_genoa[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1746:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(a);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1747:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(b);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1751:40:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+       d2_vec = _mm512_dpbf16_ps(d2_vec, ([01;31m[K__m512bh[m[K)(d_i16_vec), (__m512bh)(d_i16_vec));
+                                          [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_cos_bf16_genoa[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1772:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(a);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1773:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(b);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1776:40:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+       ab_vec = _mm512_dpbf16_ps(ab_vec, ([01;31m[K__m512bh[m[K)(a_i16_vec), (__m512bh)(b_i16_vec));
+                                          [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K At top level:
+  [01m[Kinclude/simsimd/spatial.h:1793:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512fp16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512fp16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_l2sq_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1803:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K d2_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:1814:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(a);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1815:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(b);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1818:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K d_vec = _mm512_sub_ph(_mm512_castsi512_ph(a_i16_vec), _mm512_castsi512_ph(b_i16_vec));
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_cos_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1827:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:1828:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a2_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:1829:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K b2_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:1840:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(a);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1841:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i16_vec [01;31m[K=[m[K _mm512_loadu_epi16(b);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K At top level:
+  [01m[Kinclude/simsimd/spatial.h:1861:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vnni")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512vnni")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_l2sq_i8_ice[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1888:16:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       d2_i32_vec [01;31m[K=[m[K _mm512_dpwssd_epi32(d2_i32_vec, d_i16s_vec, d_i16s_vec);
+                  [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_l2sq_u8_ice[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1995:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       d2_i32_low_vec [01;31m[K=[m[K _mm512_dpwssd_epi32(d2_i32_low_vec, d_i16_low_vec, d_i16_low_vec);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:1996:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       d2_i32_high_vec [01;31m[K=[m[K _mm512_dpwssd_epi32(d2_i32_high_vec, d_i16_high_vec, d_i16_high_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_cos_u8_ice[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:2036:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_low_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(ab_i32_low_vec, a_i16_low_vec, b_i16_low_vec);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2037:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_high_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(ab_i32_high_vec, a_i16_high_vec, b_i16_high_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2038:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       a2_i32_low_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(a2_i32_low_vec, a_i16_low_vec, a_i16_low_vec);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2039:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       a2_i32_high_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(a2_i32_high_vec, a_i16_high_vec, a_i16_high_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2040:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       b2_i32_low_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(b2_i32_low_vec, b_i16_low_vec, b_i16_low_vec);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2041:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       b2_i32_high_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(b2_i32_high_vec, b_i16_high_vec, b_i16_high_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_l2sq_i4x2_ice[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:2062:41:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const i4_to_i8_lookup_vec = [01;31m[K_mm512_set_epi8[m[K(        //
+                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:2067:43:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const u4_squares_lookup_vec = [01;31m[K_mm512_set_epi8[m[K(                                        //
+                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:2094:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i4x2_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2095:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i4x2_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[Ksimsimd_cos_i4x2_ice[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:2173:41:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const i4_to_i8_lookup_vec = [01;31m[K_mm512_set_epi8[m[K(        //
+                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:2178:43:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const i4_squares_lookup_vec = [01;31m[K_mm512_set_epi8[m[K(       //
+                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/spatial.h:2208:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i4x2_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2209:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i4x2_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2250:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_low_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(                          //
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2254:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_low_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(                                //
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2258:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_high_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(                          //
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/spatial.h:2262:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       ab_i32_high_vec [01;31m[K=[m[K _mm512_dpwssds_epi32(                                //
+                       [01;31m[K^[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:106:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/curved.h:[m[K At top level:
+  [01m[Kinclude/simsimd/curved.h:1190:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512bf16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512bf16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_bilinear_bf16_genoa[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1209:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_vec [01;31m[K=[m[K _mm512_loadu_epi16(b + j);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1210:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               c_vec [01;31m[K=[m[K _mm512_loadu_epi16(c + i * n + j);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1216:48:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+           cb_j_vec = _mm512_dpbf16_ps(cb_j_vec, ([01;31m[K__m512bh[m[K)(b_vec), (__m512bh)(c_vec));
+                                                  [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_mahalanobis_bf16_genoa[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1242:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               a_j_vec [01;31m[K=[m[K _mm512_loadu_epi16(a + j);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1243:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_j_vec [01;31m[K=[m[K _mm512_loadu_epi16(b + j);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1244:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               c_vec [01;31m[K=[m[K _mm512_loadu_epi16(c + i * n + j);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1252:54:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+           cdiff_j_vec = _mm512_dpbf16_ps(cdiff_j_vec, ([01;31m[K__m512bh[m[K)(diff_j_vec), (__m512bh)(c_vec));
+                                                        [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_bilinear_bf16c_genoa[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1271:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1295:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)(b + j));
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1296:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               c_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)(c + i * n + j));
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1304:14:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512bh[m[K’ undeclared (first use in this function)
+               ([01;31m[K__m512bh[m[K)(_mm512_xor_si512(c_vec, sign_flip_vec)), //
+                [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1305:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kb_vec[m[K’
+               (__m512bh)[01;31m[Kb_vec[m[K);
+                         [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1309:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kb_vec[m[K’
+               (__m512bh)[01;31m[Kb_vec[m[K);
+                         [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K At top level:
+  [01m[Kinclude/simsimd/curved.h:1330:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512fp16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512fp16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_bilinear_f16_sapphire_under32unrolled[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1340:5:[m[K [01;31m[Kerror: [m[K‘[01m[K__m512h[m[K’ undeclared (first use in this function)
+       [01;31m[K__m512h[m[K const b_vec = _mm512_castsi512_ph(_mm512_maskz_loadu_epi16(mask, b));
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1340:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kconst[m[K’
+       __m512h [01;31m[Kconst[m[K b_vec = _mm512_castsi512_ph(_mm512_maskz_loadu_epi16(mask, b));
+               [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1343:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcb_j1[m[K’
+       __m512h [01;31m[Kcb_j1[m[K = _mm512_setzero_ph();
+               [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1344:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcb_j2[m[K’
+       __m512h [01;31m[Kcb_j2[m[K = _mm512_setzero_ph();
+               [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1345:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcb_j3[m[K’
+       __m512h [01;31m[Kcb_j3[m[K = _mm512_setzero_ph();
+               [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1346:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcb_j4[m[K’
+       __m512h [01;31m[Kcb_j4[m[K = _mm512_setzero_ph();
+               [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1353:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcb_j1[m[K’ undeclared (first use in this function)
+           [01;31m[Kcb_j1[m[K = _mm512_fmadd_ph(
+           [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1355:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kb_vec[m[K’ undeclared (first use in this function)
+               _mm512_mul_ph([01;31m[Kb_vec[m[K, _mm512_castsi512_ph(_mm512_set1_epi16(((simsimd_i16_t const *)a)[i + 0]))), cb_j1);
+                             [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1356:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcb_j2[m[K’ undeclared (first use in this function)
+           [01;31m[Kcb_j2[m[K = _mm512_fmadd_ph(
+           [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1359:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcb_j3[m[K’ undeclared (first use in this function)
+           [01;31m[Kcb_j3[m[K = _mm512_fmadd_ph(
+           [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1362:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcb_j4[m[K’ undeclared (first use in this function)
+           [01;31m[Kcb_j4[m[K = _mm512_fmadd_ph(
+           [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1386:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ksum_vec[m[K’
+       __m512h [01;31m[Ksum_vec[m[K = _mm512_add_ph( //
+               [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1389:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ksum_vec[m[K’ undeclared (first use in this function)
+       *result = _mm512_reduce_add_ph([01;31m[Ksum_vec[m[K);
+                                      [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_bilinear_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1406:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1409:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K a_vec = _mm512_castsi512_ph(_mm512_set1_epi16(*(short const *)(a + i)));
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1410:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K cb_j_vec = _mm512_setzero_ph();
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1416:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_vec [01;31m[K=[m[K _mm512_loadu_epi16(b + j);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1417:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               c_vec [01;31m[K=[m[K _mm512_loadu_epi16(c + i * n + j);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_mahalanobis_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1438:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1441:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K a_i_vec = _mm512_castsi512_ph(_mm512_set1_epi16(*(short const *)(a + i)));
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1442:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K b_i_vec = _mm512_castsi512_ph(_mm512_set1_epi16(*(short const *)(b + i)));
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1443:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K diff_i_vec = _mm512_sub_ph(a_i_vec, b_i_vec);
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1444:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K cdiff_j_vec = _mm512_setzero_ph();
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1445:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K diff_j_vec;
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1452:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               a_j_vec [01;31m[K=[m[K _mm512_loadu_epi16(a + j);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1453:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_j_vec [01;31m[K=[m[K _mm512_loadu_epi16(b + j);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1454:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               c_vec [01;31m[K=[m[K _mm512_loadu_epi16(c + i * n + j);
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:[m[K In function ‘[01m[Ksimsimd_bilinear_f16c_sapphire[m[K’:
+  [01m[Kinclude/simsimd/curved.h:1481:39:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka const __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i const swap_adjacent_vec = [01;31m[K_mm512_set_epi8[m[K(                  //
+                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1498:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K cb_j_real_vec = _mm512_setzero_ph();
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1499:9:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+           [01;31m[K__m512h[m[K cb_j_imag_vec = _mm512_setzero_ph();
+           [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/curved.h:1505:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)(b + j));
+                     [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/curved.h:1506:19:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               c_vec [01;31m[K=[m[K _mm512_loadu_epi16((simsimd_i16_t const *)(c + i * n + j));
+                     [01;31m[K^[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:108:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_sum_bf16_skylake[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1287:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(a);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1288:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(b);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_scale_bf16_skylake[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1313:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(a);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_wsum_bf16_skylake[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1357:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(a);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1358:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(b);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_fma_bf16_skylake[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1449:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(a);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1450:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(b);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1451:20:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           c_bf16_vec [01;31m[K=[m[K _mm256_loadu_epi16(c);
+                      [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K At top level:
+  [01m[Kinclude/simsimd/elementwise.h:1472:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512fp16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512bw", "avx512fp16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_sum_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1479:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_vec, b_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1480:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1494:44:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 3 of ‘[01m[K_mm512_mask_storeu_epi16[m[K’
+       _mm512_mask_storeu_epi16(result, mask, [01;31m[K_mm512_castph_si512[m[K(sum_f16_vec));
+                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:55:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512bwintrin.h:107:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_mask_storeu_epi16[m[K (void *__P, __mmask32 __U, __m512i __A)
+   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:108:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_scale_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1503:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1503:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1503:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1504:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_vec, b_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1505:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1517:44:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 3 of ‘[01m[K_mm512_mask_storeu_epi16[m[K’
+       _mm512_mask_storeu_epi16(result, mask, [01;31m[K_mm512_castph_si512[m[K(sum_f16_vec));
+                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:55:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512bwintrin.h:107:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_mask_storeu_epi16[m[K (void *__P, __mmask32 __U, __m512i __A)
+   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:108:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_wsum_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1543:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1543:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1543:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1544:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K beta_vec = _mm512_set1_ph((_Float16)beta);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1544:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbeta[m[K’
+       __m512h beta_vec = _mm512_set1_ph((_Float16)[01;31m[Kbeta[m[K);
+                                                   [01;31m[K^~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1545:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_vec, b_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1546:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_scaled_f16_vec, sum_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1561:44:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 3 of ‘[01m[K_mm512_mask_storeu_epi16[m[K’
+       _mm512_mask_storeu_epi16(result, mask, [01;31m[K_mm512_castph_si512[m[K(sum_f16_vec));
+                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:55:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512bwintrin.h:107:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_mask_storeu_epi16[m[K (void *__P, __mmask32 __U, __m512i __A)
+   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:108:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_fma_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1571:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1571:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1571:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1572:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K beta_vec = _mm512_set1_ph((_Float16)beta);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1572:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbeta[m[K’
+       __m512h beta_vec = _mm512_set1_ph((_Float16)[01;31m[Kbeta[m[K);
+                                                   [01;31m[K^~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1573:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_vec, b_f16_vec, c_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1574:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_f16_vec, ab_scaled_f16_vec, sum_f16_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1592:44:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 3 of ‘[01m[K_mm512_mask_storeu_epi16[m[K’
+       _mm512_mask_storeu_epi16(result, mask, [01;31m[K_mm512_castph_si512[m[K(sum_f16_vec));
+                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/immintrin.h:55:0[m[K,
+                   from [01m[Kinclude/simsimd/types.h:240[m[K,
+                   from [01m[Kinclude/simsimd/binary.h:50[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:105[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[K/usr/lib/gcc/x86_64-linux-gnu/6/include/avx512bwintrin.h:107:1:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   [01;36m[K_mm512_mask_storeu_epi16[m[K (void *__P, __mmask32 __U, __m512i __A)
+   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:108:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_sum_u8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1609:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1610:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_scale_u8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1622:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1622:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1622:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1624:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1625:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_scaled_f16_low_vec, a_scaled_f16_high_vec, sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1634:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1644:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_low_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_low_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1645:22:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_high_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_high_vec);
+                        [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_wsum_u8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1673:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1673:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1673:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1674:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K beta_vec = _mm512_set1_ph((_Float16)beta);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1674:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbeta[m[K’
+       __m512h beta_vec = _mm512_set1_ph((_Float16)[01;31m[Kbeta[m[K);
+                                                   [01;31m[K^~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1676:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec, b_f16_low_vec, b_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1677:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_scaled_f16_low_vec, a_scaled_f16_high_vec, sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1687:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1688:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1703:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_low_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_low_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1704:22:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_high_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_high_vec);
+                        [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_sum_i8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1716:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec, b_f16_low_vec, b_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1717:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_scaled_f16_low_vec, a_scaled_f16_high_vec, sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1728:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1729:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_scale_i8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1742:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1742:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1742:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1744:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1745:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1754:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1764:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_low_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_low_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1765:22:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_high_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_high_vec);
+                        [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_wsum_i8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1794:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1794:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1794:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1795:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K beta_vec = _mm512_set1_ph((_Float16)beta);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1795:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbeta[m[K’
+       __m512h beta_vec = _mm512_set1_ph((_Float16)[01;31m[Kbeta[m[K);
+                                                   [01;31m[K^~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1797:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec, b_f16_low_vec, b_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1798:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_scaled_f16_low_vec, a_scaled_f16_high_vec, sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1809:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1810:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1825:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_low_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_low_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1826:22:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_high_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_high_vec);
+                        [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_fma_i8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1839:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1839:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1839:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1840:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K beta_vec = _mm512_set1_ph((_Float16)beta);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1840:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbeta[m[K’
+       __m512h beta_vec = _mm512_set1_ph((_Float16)[01;31m[Kbeta[m[K);
+                                                   [01;31m[K^~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1842:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec, b_f16_low_vec, b_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1843:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K c_f16_low_vec, c_f16_high_vec, ab_f16_low_vec, ab_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1844:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_scaled_f16_low_vec, ab_scaled_f16_high_vec, sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1856:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1857:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1858:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           c_i8_vec [01;31m[K=[m[K _mm512_loadu_epi8(c);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1878:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_low_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_low_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1879:22:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_high_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_high_vec);
+                        [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:[m[K In function ‘[01m[Ksimsimd_fma_u8_sapphire[m[K’:
+  [01m[Kinclude/simsimd/elementwise.h:1892:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K alpha_vec = _mm512_set1_ph((_Float16)alpha);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1892:41:[m[K [01;31m[Kerror: [m[K‘[01m[K_Float16[m[K’ undeclared (first use in this function)
+       __m512h alpha_vec = _mm512_set1_ph(([01;31m[K_Float16[m[K)alpha);
+                                           [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1892:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kalpha[m[K’
+       __m512h alpha_vec = _mm512_set1_ph((_Float16)[01;31m[Kalpha[m[K);
+                                                    [01;31m[K^~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1893:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K beta_vec = _mm512_set1_ph((_Float16)beta);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1893:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbeta[m[K’
+       __m512h beta_vec = _mm512_set1_ph((_Float16)[01;31m[Kbeta[m[K);
+                                                   [01;31m[K^~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1895:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_f16_low_vec, a_f16_high_vec, b_f16_low_vec, b_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1896:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K c_f16_low_vec, c_f16_high_vec, ab_f16_low_vec, ab_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1897:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ab_scaled_f16_low_vec, ab_scaled_f16_high_vec, sum_f16_low_vec, sum_f16_high_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1909:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           a_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(a);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1910:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           b_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(b);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1911:18:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+           c_u8_vec [01;31m[K=[m[K _mm512_loadu_epi8(c);
+                    [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1931:21:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_low_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_low_vec);
+                       [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/elementwise.h:1932:22:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+       sum_i16_high_vec [01;31m[K=[m[K _mm512_cvtph_epi16(sum_f16_high_vec);
+                        [01;31m[K^[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:110:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/probability.h:[m[K In function ‘[01m[Ksimsimd_kl_f32_skylake[m[K’:
+  [01m[Kinclude/simsimd/probability.h:439:22:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 sum_vec = [01;31m[K_mm512_setzero[m[K();
+                        [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:[m[K In function ‘[01m[Ksimsimd_js_f32_skylake[m[K’:
+  [01m[Kinclude/simsimd/probability.h:468:24:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 sum_a_vec = [01;31m[K_mm512_setzero[m[K();
+                          [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:469:24:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512 {aka __vector(16) float}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512 sum_b_vec = [01;31m[K_mm512_setzero[m[K();
+                          [01;31m[K^~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:[m[K At top level:
+  [01m[Kinclude/simsimd/probability.h:511:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512fp16")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "avx512fp16")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/probability.h:514:18:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+   SIMSIMD_INTERNAL [01;31m[K__m512h[m[K _simsimd_log2_f16_sapphire(__m512h x) {
+                    [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:514:53:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+   SIMSIMD_INTERNAL __m512h _simsimd_log2_f16_sapphire([01;31m[K__m512h[m[K x) {
+                                                       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:[m[K In function ‘[01m[Ksimsimd_kl_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/probability.h:533:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:534:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K epsilon_vec = _mm512_set1_ph((simsimd_f16_t)SIMSIMD_F16_DIVISION_EPSILON);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:535:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_vec, b_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:549:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ratio_vec = _mm512_div_ph(a_vec, b_vec);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:550:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K log_ratio_vec = _simsimd_log2_f16_sapphire(ratio_vec);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:551:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K prod_vec = _mm512_mul_ph(a_vec, log_ratio_vec);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:[m[K In function ‘[01m[Ksimsimd_js_f16_sapphire[m[K’:
+  [01m[Kinclude/simsimd/probability.h:561:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_a_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:562:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K sum_b_vec = _mm512_setzero_ph();
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:563:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K epsilon_vec = _mm512_set1_ph((simsimd_f16_t)SIMSIMD_F16_DIVISION_EPSILON);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:564:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K a_vec, b_vec;
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:578:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K m_vec = _mm512_mul_ph(_mm512_add_ph(a_vec, b_vec), _mm512_set1_ph((simsimd_f16_t)0.5f));
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:582:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K m_recip_approx = _mm512_rcp_ph(m_vec);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:583:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ratio_a_vec = _mm512_mul_ph(a_vec, m_recip_approx);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:584:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K ratio_b_vec = _mm512_mul_ph(b_vec, m_recip_approx);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:585:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K log_ratio_a_vec = _simsimd_log2_f16_sapphire(ratio_a_vec);
+       [01;31m[K^~~~~~~[m[K
+  [01m[Kinclude/simsimd/probability.h:586:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[K__m512h[m[K’
+       [01;31m[K__m512h[m[K log_ratio_b_vec = _simsimd_log2_f16_sapphire(ratio_b_vec);
+       [01;31m[K^~~~~~~[m[K
+  In file included from [01m[Kinclude/simsimd/simsimd.h:111:0[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/sparse.h:[m[K At top level:
+  [01m[Kinclude/simsimd/sparse.h:277:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vbmi2")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "lzcnt", "popcnt", "avx512bw", "avx512vbmi2")
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:[m[K In function ‘[01m[K_simsimd_intersect_u16x32_ice[m[K’:
+  [01m[Kinclude/simsimd/sparse.h:294:19:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i b01 = [01;31m[K_mm512_shrdi_epi32[m[K(b, b, 16);
+                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:295:19:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i b11 = [01;31m[K_mm512_shrdi_epi32[m[K(b1, b1, 16);
+                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:296:19:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i b21 = [01;31m[K_mm512_shrdi_epi32[m[K(b2, b2, 16);
+                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:297:19:[m[K [01;31m[Kerror: [m[Kincompatible types when initializing type ‘[01m[K__m512i {aka __vector(8) long long int}[m[K’ using type ‘[01m[Kint[m[K’
+       __m512i b31 = [01;31m[K_mm512_shrdi_epi32[m[K(b3, b3, 16);
+                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:[m[K At top level:
+  [01m[Kinclude/simsimd/sparse.h:529:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vbmi2")) is unknown
+   #pragma [01;31m[KGCC[m[K target("avx2", "avx512f", "avx512vl", "bmi2", "lzcnt", "popcnt", "avx512bw", "avx512vbmi2", "avx512bf16", \
+           [01;31m[K^~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:529:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512bf16")) is unknown
+  [01m[Kinclude/simsimd/sparse.h:529:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vnni")) is unknown
+  [01m[Kinclude/simsimd/sparse.h:529:9:[m[K [01;31m[Kerror: [m[Kattribute(target("avx512vp2intersect")) is unknown
+  [01m[Kinclude/simsimd/sparse.h:[m[K In function ‘[01m[Ksimsimd_spdot_weights_u16_turin[m[K’:
+  [01m[Kinclude/simsimd/sparse.h:739:27:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               a_weights_vec [01;31m[K=[m[K _mm256_maskz_compress_epi16(a_matches_any_in_b, a_weights_vec);
+                             [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/sparse.h:741:27:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_weights_vec [01;31m[K=[m[K _mm256_maskz_compress_epi16(b_matches_any_in_a, b_weights_vec);
+                             [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/sparse.h:742:70:[m[K [01;31m[Kerror: [m[K‘[01m[K__m256bh[m[K’ undeclared (first use in this function)
+               product_vec.ymmps = _mm256_dpbf16_ps(product_vec.ymmps, ([01;31m[K__m256bh[m[K)a_weights_vec, (__m256bh)b_weights_vec);
+                                                                        [01;31m[K^~~~~~~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:742:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ka_weights_vec[m[K’
+               product_vec.ymmps = _mm256_dpbf16_ps(product_vec.ymmps, (__m256bh)[01;31m[Ka_weights_vec[m[K, (__m256bh)b_weights_vec);
+                                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+  [01m[Kinclude/simsimd/sparse.h:[m[K In function ‘[01m[Ksimsimd_spdot_counts_u16_turin[m[K’:
+  [01m[Kinclude/simsimd/sparse.h:824:27:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               a_weights_vec [01;31m[K=[m[K _mm256_maskz_compress_epi16(a_matches_any_in_b, a_weights_vec);
+                             [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/sparse.h:826:27:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               b_weights_vec [01;31m[K=[m[K _mm256_maskz_compress_epi16(b_matches_any_in_a, b_weights_vec);
+                             [01;31m[K^[m[K
+  [01m[Kinclude/simsimd/sparse.h:827:29:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[K__m256i {aka __vector(4) long long int}[m[K’ from type ‘[01m[Kint[m[K’
+               product_vec.ymm [01;31m[K=[m[K _mm256_dpwssds_epi32(product_vec.ymm, a_weights_vec, b_weights_vec);
+                               [01;31m[K^[m[K
+  In file included from [01m[Kinclude/simsimd/curved.h:41:0[m[K,
+                   from [01m[Kinclude/simsimd/simsimd.h:106[m[K,
+                   from [01m[Kc/lib.c:54[m[K:
+  [01m[Kinclude/simsimd/spatial.h:[m[K In function ‘[01m[K_simsimd_substract_bf16x32_genoa[m[K’:
+  [01m[Kinclude/simsimd/spatial.h:1676:26:[m[K [01;36m[Knote: [m[KThe ABI for passing parameters with 64-byte alignment has changed in GCC 4.6
+   SIMSIMD_INTERNAL __m512i [01;36m[K_simsimd_substract_bf16x32_genoa[m[K(__m512i a_i16, __m512i b_i16) {
+                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  error: command '/usr/bin/gcc' failed with exit code 1
+  error: subprocess-exited-with-error
+  
+  × Building wheel for simsimd (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: /home/sitcharn/anaconda3/envs/Sahar/bin/python /home/sitcharn/anaconda3/envs/Sahar/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py build_wheel /tmp/tmpijcnabne
+  cwd: /tmp/pip-install-o5jkhc4z/simsimd_c7f2a50f8f6749099fc643c446f27428
+  Building wheel for simsimd (pyproject.toml): finished with status 'error'
+  ERROR: Failed building wheel for simsimd
+Failed to build dlib simsimd
+ERROR: Failed to build installable wheels for some pyproject.toml based projects (dlib, simsimd)

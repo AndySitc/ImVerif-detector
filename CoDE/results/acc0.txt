@@ -1,0 +1,6 @@
+color: 82.57  39.48  58.69
+Fully generated: 82.0  94.4  88.2
+Photoshop: 84.8  4.8  44.8
+color: 82.57  39.48  58.69  61.03
+Fully generated: 82.0  94.4  88.2  88.2
+Photoshop: 84.8  4.8  44.8  44.8

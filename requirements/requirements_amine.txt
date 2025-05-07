@@ -1,0 +1,12 @@
+scipy
+scikit-learn
+numpy<2.0
+opencv_python
+Pillow
+pandas
+# torch>=1.2.0
+torch==1.11 
+torchvision==0.12
+# torchaudio==0.10.2
+# torchvision
+gdown==4.7.1 
