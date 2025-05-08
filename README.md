@@ -17,22 +17,22 @@ Before running predictions, you need to download and set up the model weights.
 ## 2. Set Up the Environment
 To install the required virtual environments and dependencies, run:
 
-    bash install_envs.sh
+    bash install_envs_final.sh
 
 ## 3. Run predictions
 ### Predict from a Single Image
 
-    bash run_predictions.sh false your/image/path
+    bash run_predictions_final.sh false your/image/path
 
 #### Examble:
-    bash run_predictions.sh false "/medias/db/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg"
+    bash run_predictions_final.sh false "/medias/db/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg"
 
 ### Predict from a Text File Containing Image Paths
 
-    bash run_predictions.sh true path/toyour/file.txt
+    bash run_predictions_final.sh true path/toyour/file.txt
 
 #### Examble:
-    bash run_predictions.sh true "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif_Detector 2/data/test.txt"
+    bash run_predictions_final.sh true "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif_Detector 2/data/test.txt"
 
 You will find the prediction result in output/ensemble.csv
 
