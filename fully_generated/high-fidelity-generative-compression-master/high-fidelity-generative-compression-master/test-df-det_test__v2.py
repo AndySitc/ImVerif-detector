@@ -10,7 +10,6 @@ from PIL import Image
 from torchvision import transforms, datasets
 import pandas as pd
 
-
 from default_config_test import ModelModes, ModelTypes, hific_args, directories
 from default_config_test import hific_args, mse_lpips_args, directories, ModelModes, ModelTypes
 from src.model import Model  # your full HiFiC model
@@ -20,14 +19,6 @@ from src.helpers import utils, datasets
 from pathlib import Path
 import torch.multiprocessing as mp
 mp.set_start_method('spawn', force=True)
-
-from torch.utils.data import Dataset, DataLoader
-from torchvision import transforms
-from pathlib import Path
-from PIL import Image
-import pandas as pd
-import torch
-from tqdm import tqdm
 import gc
 
 def apply_transform():
@@ -43,7 +34,7 @@ def read_data(image_path):
 
 class ImageDataset(Dataset):
     def __init__(self, image_paths, transform=None):
-        self.image_paths = list(image_paths)  # 🔧 Conversion en liste pour l'indexation
+        self.image_paths = list(image_paths)  # Convert to list for indexing
         self.transform = transform
 
     def __len__(self):
@@ -56,17 +47,17 @@ class ImageDataset(Dataset):
             image = self.transform(image)
         return image, image_path
 
-def predict(model, input_path, device, multiple, output_file="alex_github.csv", name="Alex"):
+def predict(model, input_path, device, multiple, output_file, name="Alex"):
     model.to(device)
     model.eval()
 
-    # Lire les prédictions déjà faites
+    # Read already predicted images
     already_done = set()
     output_path = Path("output") / output_file
     if output_path.exists():
         df_old = pd.read_csv(output_path)
         already_done = set(df_old["image_path"].tolist())
-        print(f"📄 {len(already_done)} images déjà traitées")
+        print(f"{len(already_done)} images already processed")
 
     fake_list = [
         'fake', 'DF40', 'DF40_train', 'defacto_copymove', 'defacto_face', 'defacto_inpainting', 'defacto_splicing', 'cips',
@@ -79,24 +70,24 @@ def predict(model, input_path, device, multiple, output_file="alex_github.csv", 
         with open(output_path, "a") as f:
             pd.DataFrame([row]).to_csv(f, header=header, index=False)
 
-    print("🔍 Démarrage des prédictions...")
+    print("Starting predictions...")
 
     if multiple:
-        print("Mode batch activé...")
+        print("Batch mode activated...")
 
-        # 🔍 Récupération de toutes les images dans le dossier input_path
+        # Get all image paths from input file
         with open(input_path, "r") as f:
             all_image_paths = [line.strip() for line in f if line.strip()]
         new_images = list(set(all_image_paths) - already_done)
 
         dataset = ImageDataset(image_paths=new_images, transform=apply_transform())
         if len(dataset) == 0:
-            print("✅ Aucune nouvelle image à prédire.")
+            print("No new image to predict.")
             return
 
         dataloader = DataLoader(dataset, shuffle=False, batch_size=8, num_workers=16)
 
-        for images, paths in tqdm(dataloader, desc="📸 Prédictions"):
+        for images, paths in tqdm(dataloader, desc="Predictions"):
             images = images.to(device)
             preds = model(images).squeeze()
             scores = preds.detach().cpu().numpy()
@@ -113,15 +104,15 @@ def predict(model, input_path, device, multiple, output_file="alex_github.csv", 
                 }
                 append_to_csv(row)
 
-            # nettoyage mémoire
+            # Memory cleanup
             del images, preds
             torch.cuda.empty_cache()
             gc.collect()
-        print(f"✅ Prédictions terminées. Résultats dans {output_path}")
+        print(f"Predictions completed. Results saved to {output_path}")
 
     else:
         if input_path in already_done:
-            print(f"⏭️ Image déjà prédite : {input_path}")
+            print(f"Image already predicted: {input_path}")
             return
 
         image = read_data(image_path=input_path).to(device).unsqueeze(0)
@@ -136,9 +127,8 @@ def predict(model, input_path, device, multiple, output_file="alex_github.csv", 
             # "correct_label": correct_label
         }
         append_to_csv(row)
-        print(f"✅ Prédiction enregistrée dans {output_path}")
+        print(f"Prediction saved to {output_path}")
 
-    
 
 if __name__ == '__main__':
     description = "CompressionForDeepfake-Detection"
@@ -163,7 +153,6 @@ if __name__ == '__main__':
     general.add_argument("-LMM", "--use_latent_mixture_model", help="Use latent mixture model as latent entropy model.", action="store_true")
     general.add_argument("-input", "--input", type=str, default=None, help="The image path")
     general.add_argument("--multiple", action="store_true", default=False, help="Use this flag to enable batch prediction")
-
 
     # Optimization-related options
     optim_args = parser.add_argument_group("Optimization-related options")
@@ -201,9 +190,8 @@ if __name__ == '__main__':
     args.n_steps = int(args.n_steps)
     logger = utils.logger_setup(logpath=os.path.join(args.snapshot, 'logs'), filepath=os.path.abspath(__file__))
 
-
     device = f'cuda:{cmd_args.gpu}'
-    print(f"🚀 Using device: {device}")
+    print(f"Using device: {device}")
 
     # Initialize HiFiC in EVALUATION mode
     hific = Model(hific_args, logger, model_mode=ModelModes.EVALUATION, model_type=ModelTypes.COMPRESSION_GAN)
@@ -216,4 +204,4 @@ if __name__ == '__main__':
     classifier.hific.Hyperprior.hyperprior_entropy_model.build_tables()
     classifier.load_state_dict(torch.load("models/fully_generated/latest.pth"))
     classifier.eval()
-    predict(classifier, cmd_args.input, device, cmd_args.multiple, output_file="alex_test_dataset_balanced.csv")
+    predict(classifier, cmd_args.input, device, cmd_args.multiple, output_file="alex.csv")

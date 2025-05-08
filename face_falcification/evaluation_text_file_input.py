@@ -64,6 +64,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 face_detector = dlib.get_frontal_face_detector()
 predictor_path = args.face_detector_path
+print("predictor_path: ", predictor_path)
 face_predictor = dlib.shape_predictor(predictor_path)
 
 def compute_and_save_confusion_matrix(results, output_path='confusion_matrix.png'):
@@ -295,27 +296,26 @@ def main():
     with open(args.detector_path, 'r') as f:
         config = yaml.safe_load(f)
 
-    # Set cudnn benchmark if needed
-    if config['cudnn']:
+    if config.get('cudnn', False):
         cudnn.benchmark = True
 
-    # Initialize the model
+    # Initialize model
     model_class = DETECTOR[config['model_name']]
     model = model_class(config).to(device)
 
     init_seed(config)
-    epoch = 0
+
     if args.weights_path:
         try:
             epoch = int(args.weights_path.split('/')[-1].split('.')[0].split('_')[2])
         except:
             epoch = 0
         ckpt = torch.load(args.weights_path, map_location=device)
-        if 'state_dict' in ckpt:
-            ckpt = ckpt['state_dict']
+        ckpt = ckpt['state_dict'] if 'state_dict' in ckpt else ckpt
+
         new_weights = {}
         for key, value in ckpt.items():
-            new_key = key.replace('module.', '')  
+            new_key = key.replace('module.', '')
             if 'base_model.' in new_key:
                 new_key = new_key.replace('base_model.', 'backbone.')
             if 'classifier.' in new_key:
@@ -324,85 +324,48 @@ def main():
 
         model.load_state_dict(new_weights, strict=True)
         model.eval()
-        print('===> Load checkpoint done!')
+        print('Checkpoint loaded.')
     else:
-        print('Fail to load the pre-trained weights')
+        print('No weights provided.')
 
-    # Read image paths from the text file
-    text_file_path = args.input  # Use the `--image_dir` argument to specify the text file
-
-    if not os.path.exists(text_file_path):
-        raise FileNotFoundError(f"Text file not found: {text_file_path}")
+    # Image paths
+    if not os.path.exists(args.input):
+        raise FileNotFoundError(f"Input path not found: {args.input}")
 
     if args.multiple:
-        with open(text_file_path, 'r') as f:
+        with open(args.input, 'r') as f:
             image_paths = [line.strip() for line in f if line.strip()]
     else:
-        image_paths = [text_file_path]
+        image_paths = [args.input]
 
-    # Initialize results list
     results = []
-
-    # Process each image
     for image_path in tqdm(image_paths, desc="Processing images"):
-        # try:
-        print("image: ", image_path)
-        # Define a mapping of keywords to labels
-        keyword_to_label = {
-            '/DF40/': 'fake',
-            '/DF40_train/': 'fake',
-            '/Celeb-DF-v2/' : 'real',
-            'original_sequences': 'real'
-        }
+        try:
+            image_tensor = load_image(image_path, config, face_detector, face_predictor, resolution=224)
+            prob = inference(model, image_tensor)
+            predicted_label = int(prob >= 0.5)
 
-        # Determine the correct label based on keywords in the image path
-        correct_label = None
-        for keyword, mapped_label in keyword_to_label.items():
-            if keyword in image_path:
-                correct_label = mapped_label
-                break
+            results.append({
+                'image_path': image_path,
+                'score': prob,
+                'predicted_label': predicted_label
+            })
+        except Exception as e:
+            print(f"Error processing {image_path}: {e}")
 
-        # Default label if no keyword matches
-        if correct_label is None:
-            correct_label = 'unknown'
-
-        # Load and preprocess the image
-        image_tensor = load_image(image_path, config, face_detector, face_predictor, resolution=224)
-        print("image_tensor:", image_tensor)
-        # Perform inference
-        prob = inference(model, image_tensor)
-
-        # Determine the predicted label based on the probability
-        predicted_label = 1 if prob >= 0.5 else 0
-
-        # Append the result to the list
-        results.append({
-            'image_path': image_path,
-            'score': prob,
-            'predicted_label': predicted_label,
-            'correct_label': correct_label
-        })
-        # except Exception as e:
-        #     print(f"Error processing {image_path}: {e}")    
-
-    # Save results to a CSV file
-    # root = "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/face_falcification"
-    # results_dir = os.path.join(root, 'results')
-    results_dir = "../output/"
+    # Save CSV
+    results_dir = "output/"
     os.makedirs(results_dir, exist_ok=True)
 
-    # Use the input text file name to generate the CSV file name
-    # csv_file_name = os.path.splitext(os.path.basename(text_file_path))[0]
-    detector_name = Path(args.weights_path).parts[-2]
-    # csv_file_path = os.path.join(results_dir, csv_file_name)
-    csv_file_path = f"{results_dir}sahar_{detector_name}" + '.csv'
+    detector_name = Path(args.weights_path).parts[-2] if args.weights_path else "no_weights"
+    csv_file_path = os.path.join(results_dir, f"sahar_{detector_name}.csv")
+
     with open(csv_file_path, 'w', newline='') as csvfile:
-        fieldnames = ['image_path', 'score', 'predicted_label', 'correct_label']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer = csv.DictWriter(csvfile, fieldnames=["image_path", "score", "predicted_label"])
         writer.writeheader()
         writer.writerows(results)
-    
-    print(f"Results saved to: {csv_file_path}")
-    
+
+    print(f"\n Results saved to: {csv_file_path}")
+
 if __name__ == "__main__":
     main()

@@ -1,37 +1,41 @@
-## Installation guide
+# Installation Guide
 
-To install all the virtual environement and all the libraries run the 2 following line in your terminal: 
+## 1. Download Pre-trained Model Weights
 
-    chmod +x install_envs.sh
-    ./install_envs.sh
+Before running predictions, you need to download and set up the model weights.
 
-Test to get the prediction for each model (demo for me):
+1. Go to the following link:  
+   👉 [Google Drive – Model Weights](https://drive.google.com/drive/folders/1ydUjZHFunWYDgLeZ6jpznfMYFGb7hA9K?usp=drive_link)
 
-    Sahar's model
-        python demo.py -f examples/fake.png -m weights/model_epoch_best.pth
+2. Download the file `models.zip`.
 
-    Andy's model
-        python model_to_excel.py
+3. Unzip it.
 
-    Abdel's model
-        python "test_deepfake_detector copy.py"
-
-## To get the prediction
-### Image path of test (fake)
-
-    /medias/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg
+4. Move the extracted `models` folder into the `ImVerif-detector` directory of the project:
 
 
-### Get the prediction:
-    chmod +x run_predictions.sh 
-    ./run_predictions.sh /chemin/vers/ton/image.jpg
+## 2. Set Up the Environment
+To install the required virtual environments and dependencies, run:
 
-#### MAJ get prediction
-    bash run_predictions_test.sh true paths.txt  # for multiple predictions
-    bash run_prediction.sh false /chemin/image.jpg  # pour une seule
+    bash install_envs.sh
 
+## 3. Run predictions
+### Predict from a Single Image
+
+    bash run_predictions.sh false your/image/path
 
 #### Examble:
-    ./run_predictions.sh "/medias/db/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg"  
-    
-    bash run_prediction.sh false "/medias/db/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg"  
+    bash run_predictions.sh false "/medias/db/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg"
+
+### Predict from a Text File Containing Image Paths
+
+    bash run_predictions.sh true path/toyour/file.txt
+
+#### Examble:
+    bash run_predictions.sh true "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif_Detector 2/data/test.txt"
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+Detector,Agrees with Correct,Agreement Ratio
+Detector alex,993,0.5020222446916077
+Detector CoDE,989,0.5
+Detector abdel,927,0.46865520728008087
+Detector andy,938,0.474216380182002
+Detector amine,840,0.4246713852376138
+Detector fr,1057,0.5343781597573306
+Detector fs,994,0.5025278058645096
+Detector df40,1056,0.5338725985844287

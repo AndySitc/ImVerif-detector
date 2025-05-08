@@ -255,7 +255,7 @@ class ImageKeywording:
         df.columns = ['images'] + [f'keyword_{i+1}' for i in range(settings.TOP_K)] + [f'embedding_{i+1}' for i in range(settings.TOP_K)]
 
         # Save to CSV
-        output_dir = "keywords_extractions_with_embeddings_test.csv"
+        output_dir = "output/keywords_extractions_with_embeddings.csv"
         df.to_csv(output_dir, index=False)
         print("file saved to", output_dir)
 
@@ -358,7 +358,7 @@ class ImageKeywording:
 
         
                 # Save to CSV
-        output_dir = "test_embeddings.csv"
+        output_dir = "output/test_embeddings.csv"
         df.to_csv(output_dir, index=False)
         print("file saved to", output_dir)
         

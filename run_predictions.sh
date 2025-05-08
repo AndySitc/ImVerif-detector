@@ -1,106 +1,134 @@
 #!/bin/bash
 
-# Vérifie la mémoire libre sur chaque GPU
-get_free_gpu() {
-    for i in 0 1; do
-        free=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits -i $i)
-        total=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits -i $i)
-        ratio=$(echo "$free / $total" | bc -l)
-        if (( $(echo "$ratio > 0.05" | bc -l) )); then
-            echo $i
-            return
-        fi
-    done
-    echo "none"
-}
+# Check available GPU memory
+# get_free_gpu() {
+#     for i in 0 1; do
+#         free=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits -i $i)
+#         total=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits -i $i)
+#         ratio=$(echo "$free / $total" | bc -l)
+#         if (( $(echo "$ratio > 0.05" | bc -l) )); then
+#             echo $i
+#             return
+#         fi
+#     done
+#     echo "none"
+# }
 
-# Trouve un GPU dispo
-GPU=$(get_free_gpu)
-if [ "$GPU" == "none" ]; then
-    echo "❌ Aucun GPU disponible avec suffisamment de mémoire."
-    exit 1
-fi
+# # Find an available GPU
+# GPU=$(get_free_gpu)
+# if [ "$GPU" == "none" ]; then
+#     echo "No GPU has sufficient free memory."
+#     exit 1
+# fi
 
-# Définit CUDA_VISIBLE_DEVICES
-export CUDA_VISIBLE_DEVICES=$GPU
-echo "🟢 Utilisation du GPU $GPU (CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES)"
+# # Set CUDA_VISIBLE_DEVICES
+# export CUDA_VISIBLE_DEVICES=$GPU
+# echo "Using GPU $GPU (CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES)"
 
-# Vérifier si un argument (chemin de l'image) est fourni
+# Check arguments
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <path_to_image>"
+    echo "Usage: $0 <multiple:true|false> <image_or_list_path>"
     exit 1
 fi
 
-# IMAGE_PATH="$1"
-multiple=$1  # true ou false
-input=$2     # soit une image, soit un fichier contenant la liste d'images
+multiple=$1  # true or false
+input=$2     # image path or file containing a list of images
 
-# Déclaration des environnements et scripts Python associés
+# Declare environments and associated Python scripts
 declare -A envs_scripts
 declare -A envs_args
 
 # Scripts
-envs_scripts["Andy"]="photoshopped_detector/get_pred_andy_test_v2.py"
-envs_scripts["abdel"]="mixed/abdel__v2.py"
-envs_scripts["Alex"]="HiFic/high-fidelity-generative-compression-master/high-fidelity-generative-compression-master/test-df-det_test__v2.py"
-envs_scripts["Sameer"]="CLIP/keywords_extract.py"
-envs_scripts["Amine"]="freqNet/run.py"
-envs_scripts["CoDE"]="CoDE/CoDE_model/CoDE_run.py"
-envs_scripts["Sahar"]="face_falcification/evaluation_text_file_input.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]="photoshopped_detector/get_pred_andy_test_v2.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]="mixed/abdel__v2.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="fully_generated/high-fidelity-generative-compression-master/high-fidelity-generative-compression-master/test-df-det_test__v2.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]="CLIP/keywords_extract.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]="freqNet/run.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]="CoDE/CoDE_model/CoDE_run.py"
+# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]="face_falcification/evaluation_text_file_input_test.py"
 
-# Arguments spécifiques pour chaque environnement
-envs_args["Andy"]=""
-envs_args["abdel"]=""
-envs_args["Alex"]="--model_type compression_gan --regime low"
-envs_args["Sameer"]=""
-envs_args["Amine"]=""
-envs_args["CoDE"]=""
-envs_args["Sahar"]=""
+# Script arguments
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]=""
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]=""
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="--model_type compression_gan --regime low"
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]=""
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]=""
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]=""
+envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]=""
 
-# INPUT IMAGE
-root="face_falcification/"  # si besoin
+root="face_falcification/"  # path prefix if needed
 
 for env in "${!envs_scripts[@]}"; do
-    echo "Activation de l'environnement $env..."
+    echo "Activating environment: $env"
     echo "---------------------------------------------------------------------------------"
     source activate "$env"
 
-    if [[ "$env" == "Sahar" ]]; then
-        echo "Cas spécial Sahar : 3 exécutions avec des poids différents"
+    if [[ "$env" == "/medias/db/ImagingSecurity_misc/sitcharn/Sahar" ]]; then
+        echo "Special case for Sahar: running with three different weight files"
+        export TRANSFORMERS_CACHE=/medias/db/ImagingSecurity_misc/huggingface_cache
+        export HF_HOME=/medias/db/ImagingSecurity_misc/huggingface_cache
 
-        python "face_falcification/evaluation_text_file_input.py" \
-            --detector_path "face_falcification/config/detector/clip.yaml" \
-            --weights_path "models/face_falcification/pretrained/train_on_df40/clip_large.pth" \
-            --input "$input" \
-            --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat"
+        if [[ "$multiple" == "true" ]]; then
+            python "${root}evaluation_text_file_input_test.py" \
+                --detector_path "face_falcification/config/detector/clip.yaml" \
+                --weights_path "models/face_falcification/pretrained/train_on_df40/clip_large.pth" \
+                --input "$input" \
+                --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat" \
+                --multiple
 
-        python "${root}evaluation_text_file_input.py" \
-            --detector_path "face_falcification/config/detector/clip.yaml" \
-            --weights_path "models/face_falcification/pretrained/trained_on_fr/clip_large.pth" \
-            --input "$input" \
-            --face_detector_path "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat"
+            python "${root}evaluation_text_file_input_test.py" \
+                --detector_path "face_falcification/config/detector/clip.yaml" \
+                --weights_path "models/face_falcification/pretrained/trained_on_fr/clip_large.pth" \
+                --input "$input" \
+                --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat" \
+                --multiple
 
-        python "${root}evaluation_text_file_input.py" \
-            --detector_path "face_falcification/config/detector/clip.yaml" \
-            --weights_path "models/face_falcification/pretrained/train_on_fs/clip_large.pth" \
-            --input "$input" \
-            --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat"
+            python "${root}evaluation_text_file_input_test.py" \
+                --detector_path "face_falcification/config/detector/clip.yaml" \
+                --weights_path "models/face_falcification/pretrained/train_on_fs/clip_large.pth" \
+                --input "$input" \
+                --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat" \
+                --multiple
+        else
+            python "${root}evaluation_text_file_input_test.py" \
+                --detector_path "face_falcification/config/detector/clip.yaml" \
+                --weights_path "models/face_falcification/pretrained/train_on_df40/clip_large.pth" \
+                --input "$input" \
+                --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat"
+
+            python "${root}evaluation_text_file_input_test.py" \
+                --detector_path "face_falcification/config/detector/clip.yaml" \
+                --weights_path "models/face_falcification/pretrained/trained_on_fr/clip_large.pth" \
+                --input "$input" \
+                --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat"
+
+            python "${root}evaluation_text_file_input_test.py" \
+                --detector_path "face_falcification/config/detector/clip.yaml" \
+                --weights_path "models/face_falcification/pretrained/train_on_fs/clip_large.pth" \
+                --input "$input" \
+                --face_detector_path "face_falcification/preprocessing/dlib_tools/shape_predictor_81_face_landmarks.dat"
+        fi
 
     else
-        echo "Exécution du modèle dans $env... sur l'image $input..."
+        echo "Running model for $env on input: $input"
         args="${envs_args[$env]}"
+        export PATH="$env_path/bin:$PATH"
         if [[ "$multiple" == "true" ]]; then
             python "${envs_scripts[$env]}" $args --input "$input" --multiple
         else
-            python "${envs_scripts[$env]}" "$input"
+            python "${envs_scripts[$env]}" $args --input "$input"
         fi
+
     fi
 
-    echo "Désactivation de l'environnement $env..."
+    echo "Deactivating environment: $env"
     conda deactivate
     echo "---------------------------------------------------------------------------------"
 done
 
+# python Assembly/run_assemble.py
+source activate /medias/db/ImagingSecurity_misc/sitcharn/Ensemble
+python temporary.py
+python Assembly/test.py --model_checkpoint models/ensemble/meta_classifier.pth --data_norm
 
-
-echo "Toutes les prédictions ont été effectuées."
+echo "All predictions completed."

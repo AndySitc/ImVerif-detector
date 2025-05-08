@@ -1,31 +1,60 @@
 #!/bin/bash
 
-# Déclaration des environnements avec leur version de Python et leurs fichiers requirements
+# Declare environments with their associated requirement files
 declare -A envs
-envs["Andy"]="python=3.10 requirements_andy.txt"
-envs["Abdel"]="python=3.10 requirements_abdel.txt"
-envs["Alex"]="python=3.10 requirements_alex.txt"
-envs["Sameer"]="python=3.10 requirements_sameer.txt"
-envs["Amine"]="python=3.10 requirements_amine.txt"
-envs["CoDE"]="python=3.10 requirements_code.txt"
-envs["Sahar"]="python=3.10 requirements_sahar.txt"
+# Uncomment and configure these as needed
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]="requirements/requirements_andy.txt python=3.10"
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]="requirements/requirements_abdel.txt python=3.10"
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="requirements/requirements_alex.txt python=3.10"
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]="requirements/requirements_sameer.txt python=3.10"
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]="requirements/requirements_amine.txt python=3.10"
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]="requirements/requirements_code.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Ensemble"]="requirements/requirements_ensemble.txt python=3.10"
 
-# Création et installation des environnements
-for env in "${!envs[@]}"; do
-    python_version=$(echo "${envs[$env]}" | cut -d' ' -f1)
-    requirements_file=$(echo "${envs[$env]}" | cut -d' ' -f2)
 
-    echo "Création de l'environnement $env avec $python_version..."
-    conda create -y -n $env $python_version  # Création de l'environnement avec la version de Python
+# Special case using a .yml file for Sahar
+# envs["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]="requirements/requirements_sahar.yml"
 
-    echo "Activation de l'environnement $env..."
-    source activate $env  # ou `conda activate $env` selon ta configuration
+# Create and install each environment
+for env_path in "${!envs[@]}"; do
+    req_file="${envs[$env_path]}"
 
-    echo "Installation des dépendances depuis $requirements_file..."
-    pip install -r $requirements_file  # Installation des packages
+    echo "Processing environment at $env_path with file $req_file..."
 
-    echo "Désactivation de l'environnement $env..."
-    conda deactivate
+    if [[ "$req_file" == *.yml ]]; then
+        echo "Installing using conda YAML file..."
+
+        # Remove previous env if it exists
+        if [ -d "$env_path" ]; then
+            echo "Environment path $env_path already exists. Removing it..."
+            rm -rf "$env_path"
+        fi
+
+        conda env create -f "$req_file" -p "$env_path"
+    else
+        # python_version=$(echo "$req_file" | awk '{print $2}')
+        # requirements_file=$(echo "$req_file" | awk '{print $1}')
+        python_version=$(echo "${envs[$env_path]}" | cut -d' ' -f2)
+        requirements_file=$(echo "${envs[$env_path]}" | cut -d' ' -f1)
+
+        echo "Creating conda environment with $python_version..."
+        conda create -p $env_path python=3.10
+        export PATH="$env_path/bin:$PATH"
+        # conda create -p $env $python_version 
+
+        echo "Activating environment..."
+        source "$(conda info --base)/etc/profile.d/conda.sh"
+        conda activate "$env_path"
+
+        echo "Installing dependencies from $requirements_file..."
+        pip install -r "$requirements_file"
+
+        echo "Deactivating environment..."
+        conda deactivate
+    fi
+
+    echo "Finished setting up $env_path"
+    echo "---------------------------------------------"
 done
 
-echo "Tous les environnements ont été installés avec succès."
+echo "All environments have been installed successfully."

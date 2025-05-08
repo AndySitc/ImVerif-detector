@@ -1,15 +1,15 @@
 # Base
-IMAGES_DIR = './data/image'  # folder with images for image keywording/search
-VOCABULARY = './data/stock_keywords_vocabulary.json'  # json-file with keywords vocabulary
-OUTPUT_DIR = './data/target_images'  # folder for saving images (result of image search)
-VOCAB_FEATURES = './data/vocab_features.pt'  # pytorch features file for keywords
-IMAGE_FEATURES = './data/image_features.pt'  # pytorch features file for images
+IMAGES_DIR = 'CLIP/data/image'  # folder with images for image keywording/search
+VOCABULARY = 'CLIP/data/stock_keywords_vocabulary.json'  # json-file with keywords vocabulary
+OUTPUT_DIR = 'CLIP/data/target_images'  # folder for saving images (result of image search)
+VOCAB_FEATURES = 'CLIP/data/vocab_features.pt'  # pytorch features file for keywords
+IMAGE_FEATURES = 'CLIP/data/image_features.pt'  # pytorch features file for images
 
 # Image Keywording ---------------------------------------------------------------------
 TEXT_MODEL = 'clip-ViT-B-32-multilingual-v1'  # text encoder
 IMAGE_MODEL = 'clip-ViT-B-32'  # image encoder
 DEVICE = 'cuda:1'  # cpu/cuda
-CACHE_FOLDER = './data'  # folder for data files and models
+CACHE_FOLDER = 'CLIP/data'  # folder for data files and models
 BATCH_SIZE = 32  # batch size for image features extraction
 TOP_K = 10  # number of keywords per image
 PROMPT_TEMPLATE = 'a photo of {TARGET}'  # prompt template for embedding process

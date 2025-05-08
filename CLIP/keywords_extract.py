@@ -3,9 +3,10 @@ import argparse
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Script de prédiction d'images deepfake.")
-    parser.add_argument("--input", required=True, help="Fichier .txt contenant les chemins des images à prédire")
-    parser.add_argument("--multiple", action="store_true", help="Si activé, traite plusieurs images listées dans le fichier")
+   
+    parser = argparse.ArgumentParser(description="Deepfake image prediction script.")
+    parser.add_argument("--input", required=True, help="Text file with image paths to predict")
+    parser.add_argument("--multiple", action="store_true", help="If enabled, processes multiple images from file")
     args = parser.parse_args()
     
     # Lire les chemins du fichier input
