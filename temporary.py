@@ -27,8 +27,8 @@ for file, suffix in csv_files.items():
     # Supprime les lignes parasites où image_path == "image_path" ou NaN
     df = df[df["image_path"].notna() & (df["image_path"] != "image_path")]    
 
-    print(f"➡️ Colonnes détectées dans {file}: {df.columns.tolist()}")
-    print(df.head())
+    # print(f"➡️ Colonnes détectées dans {file}: {df.columns.tolist()}")
+    # print(df.head())
 
     df["image_path"] = df["image_path"].astype(str).str.strip()  # Nettoyage
 
@@ -47,7 +47,7 @@ for file, suffix in csv_files.items():
 # Sauvegarde
 merged_df.drop_duplicates(inplace=True)
 merged_df.to_csv("output/merged_predictions.csv", index=False)
-print("🧪 Nombres d'images uniques :", merged_df["image_path"].nunique())
-print("📄 Nombre total de lignes :", len(merged_df))
-print("🧹 image_path problématiques :")
+# print("🧪 Nombres d'images uniques :", merged_df["image_path"].nunique())
+# print("📄 Nombre total de lignes :", len(merged_df))
+# print("🧹 image_path problématiques :")
 print(merged_df["image_path"][merged_df["image_path"].str.contains("e-", na=False)])

@@ -102,5 +102,8 @@ for env in "${!envs_scripts[@]}"; do
 done
 
 # python Assembly/run_assemble.py
+source Ensemble
+python temporary.py
+python Assembly/test.py --model_checkpoint models/ensemble/meta_classifier.pth --data_norm
 
 echo "All predictions completed."

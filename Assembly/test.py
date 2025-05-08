@@ -310,7 +310,7 @@ def test_model(args):
 
     df_test.loc[df_test.tail(len(y_pred)).index, "final_prediction"] = y_pred
     
-    df_test.to_csv("output/ensemble.csv")
+    df_test[["image_path", "final_prediction"]].to_csv("output/ensemble.csv")
     
     print_log("\n Test evaluation complete. Results saved in output/ensemble.csv")
 

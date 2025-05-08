@@ -34,6 +34,8 @@ To install the required virtual environments and dependencies, run:
 #### Examble:
     bash run_predictions.sh true "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif_Detector 2/data/test.txt"
 
+You will find the prediction result in output/ensemble.csv
+
 
 
 
