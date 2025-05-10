@@ -1,30 +1,5 @@
 #!/bin/bash
 
-# Check available GPU memory
-# get_free_gpu() {
-#     for i in 0 1; do
-#         free=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits -i $i)
-#         total=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits -i $i)
-#         ratio=$(echo "$free / $total" | bc -l)
-#         if (( $(echo "$ratio > 0.05" | bc -l) )); then
-#             echo $i
-#             return
-#         fi
-#     done
-#     echo "none"
-# }
-
-# # Find an available GPU
-# GPU=$(get_free_gpu)
-# if [ "$GPU" == "none" ]; then
-#     echo "No GPU has sufficient free memory."
-#     exit 1
-# fi
-
-# # Set CUDA_VISIBLE_DEVICES
-# export CUDA_VISIBLE_DEVICES=$GPU
-# echo "Using GPU $GPU (CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES)"
-
 # Check arguments
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <multiple:true|false> <image_or_list_path>"
@@ -39,13 +14,13 @@ declare -A envs_scripts
 declare -A envs_args
 
 # Scripts
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]="photoshopped_detector/get_pred_andy_test_v2.py"
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]="mixed/abdel__v2.py"
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="fully_generated/high-fidelity-generative-compression-master/high-fidelity-generative-compression-master/test-df-det_test__v2.py"
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]="CLIP/keywords_extract.py"
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]="freqNet/run.py"
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]="CoDE/CoDE_model/CoDE_run.py"
-# envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]="face_falcification/evaluation_text_file_input_test.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]="photoshopped_detector/get_pred_andy_test_v2.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]="mixed/abdel__v2.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="fully_generated/high-fidelity-generative-compression-master/high-fidelity-generative-compression-master/test-df-det_test__v2.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]="CLIP/keywords_extract.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]="freqNet/run.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]="CoDE/CoDE_model/CoDE_run.py"
+envs_scripts["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]="face_falcification/evaluation_text_file_input_test.py"
 
 # Script arguments
 envs_args["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]=""
