@@ -21,9 +21,9 @@ declare -A envs_args
 envs_scripts["Andy"]="photoshopped_detector/get_pred_andy_test_v2.py"
 envs_scripts["Abdel"]="mixed/abdel__v2.py"
 envs_scripts["Alex"]="fully_generated/high-fidelity-generative-compression-master/high-fidelity-generative-compression-master/test-df-det_test__v2.py"
-envs_scripts["Sameer"]="CLIP/keywords_extract.py"
+# envs_scripts["Sameer"]="CLIP/keywords_extract.py"
 envs_scripts["Amine"]="freqNet/run.py"
-envs_scripts["CoDE"]="CoDE/CoDE_model/CoDE_run.py"
+envs_scripts["CoDE"]="CoDE_folder/CoDE_model/CoDE_run.py"
 envs_scripts["Sahar"]="face_falcification/evaluation_text_file_input_test.py"
 
 envs_args["Andy"]=""
