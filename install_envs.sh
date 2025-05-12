@@ -3,17 +3,14 @@
 # Declare environments with their associated requirement files
 declare -A envs
 # Uncomment and configure these as needed
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]="requirements/requirements_andy.txt python=3.10"
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]="requirements/requirements_abdel.txt python=3.10"
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="requirements/requirements_alex.txt python=3.10"
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]="requirements/requirements_sameer.txt python=3.10"
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]="requirements/requirements_amine.txt python=3.10"
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]="requirements/requirements_code.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Andy"]="requirements/requirements_andy.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Abdel"]="requirements/requirements_abdel.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Alex"]="requirements/requirements_alex.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Sameer"]="requirements/requirements_sameer.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Amine"]="requirements/requirements_amine.txt python=3.10"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/CoDE"]="requirements/requirements_code.txt python=3.10"
 envs["/medias/db/ImagingSecurity_misc/sitcharn/Ensemble"]="requirements/requirements_ensemble.txt python=3.10"
-
-
-# Special case using a .yml file for Sahar
-# envs["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]="requirements/requirements_sahar.yml"
+envs["/medias/db/ImagingSecurity_misc/sitcharn/Sahar"]="requirements/requirements_sahar.yml"
 
 # Create and install each environment
 for env_path in "${!envs[@]}"; do
