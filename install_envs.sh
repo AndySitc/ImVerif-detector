@@ -27,7 +27,7 @@ for env_path in "${!envs[@]}"; do
             rm -rf "$env_path"
         fi
 
-        conda env create -f "$req_file" -p "$env_path"
+        conda env create -y -f "$req_file" -p "$env_path"
     else
         # python_version=$(echo "$req_file" | awk '{print $2}')
         # requirements_file=$(echo "$req_file" | awk '{print $1}')

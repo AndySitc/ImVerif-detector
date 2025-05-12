@@ -32,14 +32,14 @@ for env_name in "${!envs[@]}"; do
             echo "Environment path $env_path already exists. Removing it..."
             rm -rf "$env_path"
         fi
-        conda env create -f "$req_file_and_version" -p "$env_path"
+        conda env create -y -f "$req_file_and_version" -p "$env_path"
     else
         python_version=$(echo "$req_file_and_version" | cut -d' ' -f2)
         requirements_file=$(echo "$req_file_and_version" | cut -d' ' -f1)
 
         echo "Creating conda environment with $python_version..."
         # conda create -y -p "$env_path" python="$python_version"
-        conda create -p $env_path python=3.10
+        conda create -y -p $env_path python=3.10
 
         echo "Activating environment..."
         source "$(conda info --base)/etc/profile.d/conda.sh"
@@ -48,7 +48,7 @@ for env_name in "${!envs[@]}"; do
         export PATH="$env_path/bin:$PATH"
 
         echo "Installing dependencies from $requirements_file..."
-        pip install -r "$requirements_file"
+        pip install -r "$requirements_file" --no-cache-dir
 
         echo "Deactivating environment..."
         conda deactivate
