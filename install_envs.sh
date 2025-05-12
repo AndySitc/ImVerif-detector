@@ -38,7 +38,7 @@ for env_path in "${!envs[@]}"; do
         requirements_file=$(echo "${envs[$env_path]}" | cut -d' ' -f1)
 
         echo "Creating conda environment with $python_version..."
-        conda create -p $env_path python=3.10
+        conda create -y -p $env_path python=3.10
         export PATH="$env_path/bin:$PATH"
         # conda create -p $env $python_version 
 

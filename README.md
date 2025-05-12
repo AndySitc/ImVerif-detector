@@ -1,19 +1,19 @@
 # ImVerif-detector installation Guide
 
 ## 1. Download Pre-trained Model Weights
-Ensure that at least 45 GB of free disk space is available before proceeding the intallation of the environments + the download of the models.
 
-Before running predictions, you need to download and set up the model weights.
+Before running predictions, you must download the pre-trained model weights.
 
-1. Go to the following link:  
-   👉 [Google Drive – Model Weights](https://drive.google.com/drive/folders/1ydUjZHFunWYDgLeZ6jpznfMYFGb7hA9K?usp=drive_link)
+Please ensure that at least **45 GB** of free disk space is available before proceeding with the environment setup and model installation.
 
-2. Download the file `models.zip`.
+To download and install the model weights, simply run the following command from the root of the repository:
 
-3. Unzip it.
+    bash install_models.sh
 
-4. Move the extracted `models` folder into the `ImVerif-detector` directory of the project:
-
+This script will automatically:
+- Download the models.zip archive from the designated remote storage,
+- Unzip its contents,
+- And place the resulting models folder inside the ImVerif-detector project directory.
 
 ## 2. Set Up the Environment
 To install the required virtual environments and dependencies, run:

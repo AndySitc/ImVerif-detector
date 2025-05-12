@@ -400,7 +400,7 @@ def main():
         writer.writeheader()
         writer.writerows(results)
 
-    print(f"\n✅ Results saved to: {csv_file_path}")
+    print(f"\n Results saved to: {csv_file_path}")
 
 if __name__ == "__main__":
     main()
