@@ -13,6 +13,13 @@ Facial Deepfakes: Identifies face-swapped or manipulated facial content.
 
 **Note**: This code is intended to run exclusively on **Linux systems**.
 
+## Estimated Time Requirements
+- Model weights download & installation: ~5 minutes
+
+- Virtual environment setup: ~30 minutes
+
+- Single image prediction: ~2 minutes 30 seconds
+
 ## System Architecture
 ![System Architecture](figures/system_architecture.PNG)
 
@@ -60,7 +67,7 @@ Arguments:
 
 - /your/custom/env/base/path: Base directory where the virtual environments were previously installed.
 
-#### Examble:
+#### Example:
     bash run_predictions.sh false "test/id0_0000/Celeb-real_id1_0004_171.png" "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/envs"
 
 
@@ -86,7 +93,7 @@ Each line should contain the absolute path to a single image. For example:
 - /your/custom/env/base/path: Base directory where the virtual environments were previously installed.
 
 
-#### Examble:
+#### Example:
     bash run_predictions.sh true "test/test.txt" "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/envs"
 
 

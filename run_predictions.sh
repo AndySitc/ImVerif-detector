@@ -14,7 +14,7 @@ envs_path=$3      # base path where environments are located
 # Just the names of the subfolders (envs)
 # declare -a env_names=("Andy" "Abdel" "Alex" "Sameer" "Amine" "CoDE" "Sahar")
 declare -a env_names=("Andy" "Abdel" "Alex" "Amine" "CoDE" "Sahar")
-
+# declare -a env_names=("Andy")
 
 # Scripts associated with each environment
 declare -A envs_scripts

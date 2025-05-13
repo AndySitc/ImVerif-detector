@@ -43,7 +43,7 @@ class ImagePathDataset(Dataset):
 
 
 @torch.inference_mode()
-def predict(input_path, multiple, model, output_csv, batch_size=16):
+def predict(device, input_path, multiple, model, output_csv, batch_size=16):
     # Transformations d'image
     transform = transforms.Compose([
         transforms.CenterCrop(224),
@@ -75,7 +75,7 @@ def predict(input_path, multiple, model, output_csv, batch_size=16):
         model.eval()
         with torch.no_grad():
             for images, paths in tqdm(dataloader, desc="Batch prediction"):
-                images = images.cuda()
+                images = images.to(device)
                 logits = model(images)
                 probs = F.softmax(logits, dim=1)
                 fake_probs = probs[:, 1].cpu().numpy()
@@ -92,13 +92,18 @@ if __name__ == "__main__":
     parser.add_argument("--multiple", action="store_true", help="If set, treats the input as a list of images")
     args = parser.parse_args()
 
+    # Detect device
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+
     # Load model
     model = VITContrastiveHF(classificator_type="linear")
     model.eval()
-    model.cuda()
+    model.to(device)
 
     # Run prediction
     predict(
+        device,
         input_path=args.input,
         multiple=args.multiple,
         model=model,

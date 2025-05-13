@@ -1,30 +1,33 @@
 ,image_path,final_prediction
-0,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5419.jpg,1.0
-1,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5422.jpg,1.0
-2,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5423.jpg,0.0
-3,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5424.jpg,0.0
-4,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5425.jpg,0.0
-5,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5426.jpg,1.0
-6,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5427.jpg,0.0
-7,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5428.jpg,1.0
-8,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5429.jpg,1.0
-9,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5430.jpg,1.0
-10,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5431.jpg,0.0
-11,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5432.jpg,0.0
-12,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5433.jpg,0.0
-13,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5434.jpg,0.0
-14,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5435.jpg,0.0
-15,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0684.png,1.0
-16,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0685.png,1.0
-17,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0686.png,1.0
-18,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0687.png,1.0
-19,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0688.png,1.0
-20,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0689.png,1.0
-21,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0690.png,1.0
-22,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0691.png,1.0
-23,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0692.png,1.0
-24,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0693.png,1.0
-25,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0694.png,1.0
-26,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0695.png,1.0
-27,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0696.png,1.0
-28,/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0697.png,1.0
+0,test/id0_0000/Celeb-real_id13_0011_045.png,0.0
+1,test/id0_0000/Celeb-real_id13_0015_409.png,1.0
+2,test/id0_0000/Celeb-real_id16_0003_155.png,0.0
+3,test/id0_0000/Celeb-real_id16_0003_302.png,1.0
+4,test/id0_0000/Celeb-real_id1_0004_171.png,1.0
+5,test/id0_0000/Celeb-real_id20_0002_160.png,1.0
+6,test/id0_0000/Celeb-real_id33_0002_261.png,0.0
+7,test/id0_0000/Celeb-real_id34_0006_070.png,1.0
+8,test/id0_0000/Celeb-real_id3_0003_323.png,0.0
+9,test/id0_0000/Celeb-real_id47_0008_159.png,0.0
+10,test/id0_0000/Celeb-real_id4_0004_028.png,1.0
+11,test/id0_0000/Celeb-real_id4_0006_039.png,0.0
+12,test/id0_0000/Celeb-real_id52_0005_343.png,0.0
+13,test/id0_0000/Celeb-real_id53_0009_058.png,0.0
+14,test/id0_0000/Celeb-real_id54_0004_302.png,1.0
+15,test/id0_0000/Celeb-real_id56_0008_101.png,0.0
+16,test/id0_0000/Celeb-real_id61_0002_436.png,0.0
+17,test/id0_0000/Celeb-real_id6_0003_071.png,0.0
+18,test/id0_0000/Celeb-real_id8_0002_033.png,1.0
+19,test/id0_0000/YouTube-real_00002_148.png,0.0
+20,test/id0_0000/YouTube-real_00073_305.png,1.0
+21,test/id0_0000/YouTube-real_00104_000.png,1.0
+22,test/id0_0000/YouTube-real_00109_059.png,0.0
+23,test/id0_0000/YouTube-real_00128_029.png,0.0
+24,test/id0_0000/YouTube-real_00138_278.png,1.0
+25,test/id0_0000/YouTube-real_00151_503.png,0.0
+26,test/id0_0000/YouTube-real_00217_239.png,1.0
+27,test/id0_0000/YouTube-real_00223_092.png,1.0
+28,test/id0_0000/YouTube-real_00230_161.png,1.0
+29,test/id0_0000/YouTube-real_00276_281.png,0.0
+30,test/id0_0000/YouTube-real_00280_012.png,1.0
+31,test/id0_0000/YouTube-real_00287_000.png,0.0

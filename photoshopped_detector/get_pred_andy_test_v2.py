@@ -203,6 +203,9 @@ if __name__ == "__main__":
     # Set device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
+    if device.type == 'cpu':
+        print("Running on CPU. This will be significantly slower.")
+
 
     # Launch prediction
     predict(

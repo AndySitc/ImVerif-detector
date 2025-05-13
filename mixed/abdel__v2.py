@@ -7,6 +7,9 @@ for i in range(torch.cuda.device_count()):
     print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
 
 device = torch.device("cuda:1" if torch.cuda.device_count() > 1 else "cuda:0" if torch.cuda.is_available() else "cpu")
+if device.type == 'cpu':
+    print("Running on CPU. This will be significantly slower.")
+
 
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader

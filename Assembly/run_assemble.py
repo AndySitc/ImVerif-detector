@@ -24,7 +24,7 @@ def print_log(txt, log_file=None):
     if log_file:
         log_file.write(f"{txt}\n")
 
-print_log("Starting the script...")
+# print_log("Starting the script...")
 
 # ------------------ Dataset Class ------------------
 class DetectorsOutputDataset(Dataset):
@@ -246,8 +246,8 @@ def test_model(args):
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     clip_suffix = f"_CLIP_Top{args.top_k_clip}" if args.use_clip else ""
-    args.test_output_dir = os.path.join(args.test_output_dir, f"experiment{clip_suffix}_{timestamp}")
-    os.makedirs(args.test_output_dir, exist_ok=True)
+    # args.test_output_dir = os.path.join(args.test_output_dir, f"experiment{clip_suffix}_{timestamp}")
+    # os.makedirs(args.test_output_dir, exist_ok=True)
 
     df_test = merge_dataset()
 
@@ -268,7 +268,7 @@ def test_model(args):
         test_features = scaler.fit_transform(test_features)
 
     # Chargement du modèle
-    model_ckpt = torch.load("/home/bellelbn/DL/Imverif/outputs_without_frequent_old_labels/experiment_CLIP_Top4_20250501_024317/meta_classifier.pth")
+    model_ckpt = torch.load("Assembly/meta_classifier.pth")
     model = MetaClassifier(input_dim=test_features.shape[1], hidden_dim=args.hidden_dim)
     model.load_state_dict(model_ckpt)
 

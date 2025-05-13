@@ -1,30 +1,65 @@
 image_path,score,predicted_label
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0684.png,0.27171403407921624,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0685.png,0.272093615309255,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0686.png,0.27190162639826304,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0687.png,0.268989979825867,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0688.png,0.26903156245589827,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0689.png,0.2703685865665144,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0690.png,0.26904909085091433,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0691.png,0.2692821346606841,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0692.png,0.27817329622362336,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0693.png,0.2704254543837958,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0694.png,0.34729786621010394,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0695.png,0.29203097039604,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0696.png,0.35016679654547245,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/photoshop/fake/other/openimage_0697.png,0.269826165559646,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5419.jpg,0.2689540692009858,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5424.jpg,0.27918732104336674,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5423.jpg,0.30372212550638256,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5422.jpg,0.2690442401302329,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5426.jpg,0.27126971468922545,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5427.jpg,0.268982489879011,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5428.jpg,0.2735246577955239,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5429.jpg,0.2710805768255266,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5431.jpg,0.27477546189910435,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5430.jpg,0.2838813215225249,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5432.jpg,0.7308653861823581,1
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5433.jpg,0.27313582981138396,0
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5435.jpg,0.5522044648383136,1
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5434.jpg,0.6601131805129814,1
-/medias/db/ImagingSecurity_misc/Collaborations/Validation dataset/forandyval/online/real/5425.jpg,0.269003004999807,0
+test/id0_0000/Celeb-real_id13_0011_045.png,0.7310551500570763,1
+test/id0_0000/Celeb-real_id13_0015_409.png,0.7023773005068682,1
+test/id0_0000/Celeb-real_id16_0003_155.png,0.7303157668316962,1
+test/id0_0000/Celeb-real_id16_0003_302.png,0.7047736729573986,1
+test/id0_0000/Celeb-real_id1_0004_171.png,0.7246262463701499,1
+test/id0_0000/Celeb-real_id20_0002_160.png,0.47469317221140145,0
+test/id0_0000/Celeb-real_id33_0002_261.png,0.7307237600258175,1
+test/id0_0000/Celeb-real_id34_0006_070.png,0.6577785666572372,1
+test/id0_0000/Celeb-real_id3_0003_323.png,0.7046099175307988,1
+test/id0_0000/Celeb-real_id47_0008_159.png,0.7156758223454421,1
+test/id0_0000/Celeb-real_id4_0004_028.png,0.7257076089203881,1
+test/id0_0000/Celeb-real_id4_0006_039.png,0.7275017211065715,1
+test/id0_0000/Celeb-real_id52_0005_343.png,0.26918677629160476,0
+test/id0_0000/Celeb-real_id53_0009_058.png,0.6158938193612169,1
+test/id0_0000/Celeb-real_id54_0004_302.png,0.5045002662651402,1
+test/id0_0000/Celeb-real_id56_0008_101.png,0.3004242262892591,0
+test/id0_0000/Celeb-real_id61_0002_436.png,0.7303985374804519,1
+test/id0_0000/Celeb-real_id6_0003_071.png,0.2693574411359577,0
+test/id0_0000/Celeb-real_id8_0002_033.png,0.6378583717049597,1
+test/id0_0000/YouTube-real_00002_148.png,0.2982795896568243,0
+test/id0_0000/YouTube-real_00073_305.png,0.6754155897536948,1
+test/id0_0000/YouTube-real_00104_000.png,0.5307809346571573,1
+test/id0_0000/YouTube-real_00109_059.png,0.7310288708919777,1
+test/id0_0000/YouTube-real_00128_029.png,0.27413980439584457,0
+test/id0_0000/YouTube-real_00138_278.png,0.5048219210134812,1
+test/id0_0000/YouTube-real_00151_503.png,0.7263823179429802,1
+test/id0_0000/YouTube-real_00217_239.png,0.29355452637309204,0
+test/id0_0000/YouTube-real_00223_092.png,0.2910633456128093,0
+test/id0_0000/YouTube-real_00230_161.png,0.3136849396950957,0
+test/id0_0000/YouTube-real_00276_281.png,0.39163247807708906,0
+test/id0_0000/YouTube-real_00280_012.png,0.7089600848265685,1
+test/id0_0000/YouTube-real_00287_000.png,0.706182148694791,1
+test/id0_0000/Celeb-real_id13_0011_045.png,0.7310551500570763,1
+test/id0_0000/Celeb-real_id13_0015_409.png,0.7023773005068682,1
+test/id0_0000/Celeb-real_id16_0003_155.png,0.7303157668316962,1
+test/id0_0000/Celeb-real_id16_0003_302.png,0.7047736729573986,1
+test/id0_0000/Celeb-real_id1_0004_171.png,0.7246262463701499,1
+test/id0_0000/Celeb-real_id20_0002_160.png,0.47469317221140145,0
+test/id0_0000/Celeb-real_id33_0002_261.png,0.7307237600258175,1
+test/id0_0000/Celeb-real_id34_0006_070.png,0.6577785666572372,1
+test/id0_0000/Celeb-real_id3_0003_323.png,0.7046099175307988,1
+test/id0_0000/Celeb-real_id47_0008_159.png,0.7156758223454421,1
+test/id0_0000/Celeb-real_id4_0004_028.png,0.7257076089203881,1
+test/id0_0000/Celeb-real_id4_0006_039.png,0.7275017211065715,1
+test/id0_0000/Celeb-real_id52_0005_343.png,0.26918677629160476,0
+test/id0_0000/Celeb-real_id53_0009_058.png,0.6158938193612169,1
+test/id0_0000/Celeb-real_id54_0004_302.png,0.5045002662651402,1
+test/id0_0000/Celeb-real_id56_0008_101.png,0.3004242262892591,0
+test/id0_0000/Celeb-real_id61_0002_436.png,0.7303985374804519,1
+test/id0_0000/Celeb-real_id6_0003_071.png,0.2693574411359577,0
+test/id0_0000/Celeb-real_id8_0002_033.png,0.6378583717049597,1
+test/id0_0000/YouTube-real_00002_148.png,0.2982795896568243,0
+test/id0_0000/YouTube-real_00073_305.png,0.6754155897536948,1
+test/id0_0000/YouTube-real_00104_000.png,0.5307809346571573,1
+test/id0_0000/YouTube-real_00109_059.png,0.7310288708919777,1
+test/id0_0000/YouTube-real_00128_029.png,0.27413980439584457,0
+test/id0_0000/YouTube-real_00138_278.png,0.5048219210134812,1
+test/id0_0000/YouTube-real_00151_503.png,0.7263823179429802,1
+test/id0_0000/YouTube-real_00217_239.png,0.29355452637309204,0
+test/id0_0000/YouTube-real_00223_092.png,0.2910633456128093,0
+test/id0_0000/YouTube-real_00230_161.png,0.3136849396950957,0
+test/id0_0000/YouTube-real_00276_281.png,0.39163247807708906,0
+test/id0_0000/YouTube-real_00280_012.png,0.7089600848265685,1
+test/id0_0000/YouTube-real_00287_000.png,0.706182148694791,1

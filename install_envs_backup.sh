@@ -13,18 +13,14 @@ declare -A envs
 envs["Andy"]="requirements/requirements_andy.txt python=3.10"
 envs["Abdel"]="requirements/requirements_abdel.txt python=3.10"
 envs["Alex"]="requirements/requirements_alex.txt python=3.10"
-# envs["Sameer"]="requirements/requirements_sameer.txt python=3.10"
+envs["Sameer"]="requirements/requirements_sameer.txt python=3.10"
 envs["Amine"]="requirements/requirements_amine.txt python=3.10"
 envs["CoDE"]="requirements/requirements_code.txt python=3.10"
 envs["Ensemble"]="requirements/requirements_ensemble.txt python=3.10"
 envs["Sahar"]="requirements/requirements_sahar.yml"
 
-# Load conda functions
-source "$(conda info --base)/etc/profile.d/conda.sh"
-
-# Loop through each environment and install in background
+# Loop through each environment and install it
 for env_name in "${!envs[@]}"; do
-(
     env_path="$env_base/$env_name"
     req_file_and_version="${envs[$env_name]}"
 
@@ -38,25 +34,28 @@ for env_name in "${!envs[@]}"; do
         fi
         conda env create -y -f "$req_file_and_version" -p "$env_path"
     else
-        
+        python_version=$(echo "$req_file_and_version" | cut -d' ' -f2)
         requirements_file=$(echo "$req_file_and_version" | cut -d' ' -f1)
-        python_version=$(echo "$req_file_and_version" | cut -d' ' -f2 | cut -d'=' -f2)
 
-        conda create -y -p "$env_path" python="$python_version"
+        echo "Creating conda environment with $python_version..."
+        # conda create -y -p "$env_path" python="$python_version"
+        conda create -y -p $env_path python=3.10
 
-        echo "Activating environment and installing dependencies..."
+        echo "Activating environment..."
+        source "$(conda info --base)/etc/profile.d/conda.sh"
         conda activate "$env_path"
+         # Ajout de l'export PATH ici
         export PATH="$env_path/bin:$PATH"
+
+        echo "Installing dependencies from $requirements_file..."
         pip install -r "$requirements_file" --no-cache-dir
+
+        echo "Deactivating environment..."
         conda deactivate
     fi
 
     echo "Finished setting up $env_name"
     echo "---------------------------------------------"
-) &
 done
 
-# Wait for all parallel jobs to finish
-wait
-
-echo "All environments have been installed in parallel successfully."
+echo "All environments have been installed successfully."

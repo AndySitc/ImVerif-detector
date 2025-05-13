@@ -60,6 +60,9 @@ args = parser.parse_args()
 # args.image_dir = root+args.image_dir
 # #=============================================
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if device.type == 'cpu':
+    print("Running on CPU. This will be significantly slower.")
+
 #Input preprocessing
 
 face_detector = dlib.get_frontal_face_detector()

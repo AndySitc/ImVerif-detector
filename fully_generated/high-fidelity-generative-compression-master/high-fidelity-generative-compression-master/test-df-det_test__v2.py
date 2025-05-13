@@ -190,7 +190,17 @@ if __name__ == '__main__':
     args.n_steps = int(args.n_steps)
     logger = utils.logger_setup(logpath=os.path.join(args.snapshot, 'logs'), filepath=os.path.abspath(__file__))
 
-    device = f'cuda:{cmd_args.gpu}'
+    # device = f'cuda:{cmd_args.gpu}'
+    # print(f"Using device: {device}")
+
+    # Plus sûr : check la dispo de CUDA et le nombre de GPU
+    if torch.cuda.is_available() and cmd_args.gpu < torch.cuda.device_count():
+        device = f'cuda:{cmd_args.gpu}'
+        # print(f"Using device: {device}")
+    else:
+        print("CUDA not available or GPU ID out of range. Using CPU instead.")
+        device = 'cpu'
+
     print(f"Using device: {device}")
 
     # Initialize HiFiC in EVALUATION mode
