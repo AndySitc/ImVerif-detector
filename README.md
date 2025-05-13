@@ -97,7 +97,7 @@ Each line should contain the absolute path to a single image. For example:
     bash run_predictions.sh true "test/test.txt" "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/envs"
 
 
-After execution, the final prediction results will be saved in: output/ensemble.csv
+After execution, the final prediction results will be saved in: **output/ensemble.csv**
 
 
 
