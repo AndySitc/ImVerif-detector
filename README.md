@@ -16,8 +16,6 @@ Facial Deepfakes: Identifies face-swapped or manipulated facial content.
 
 - Virtual environment setup: ~30 minutes
 
-- Single image prediction: ~2 minutes 30 seconds
-
 Please ensure that at least **45 GB** of free disk space is available before proceeding with the environment setup and model installation.
 
 **Note**: This code is intended to run exclusively on **Linux systems**.
