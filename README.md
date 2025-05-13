@@ -1,5 +1,23 @@
 # ImVerif-detector installation Guide
 
+## Overview
+ImVerif-detector is an ensemble-based classifier designed to detect whether an image is real or a deepfake. The ensemble combines multiple expert models, each trained to specialize in a particular type of manipulation:
+
+Fully Generated: Detects entirely synthetic images.
+
+Photoshopped: Focuses on subtle retouching and partial modifications.
+
+Color Manipulation: Captures unnatural adjustments to color and lighting.
+
+Facial Deepfakes: Identifies face-swapped or manipulated facial content.
+
+**Note**: This code is intended to run exclusively on **Linux systems**.
+
+## System Architecture
+![System Architecture](figures/system_architecture.PNG)
+
+The architecture illustrates the pipeline from image input to final ensemble classification. Each specialized model provides an individual prediction, and the ensemble module produces the final verdict.
+
 ## 1. Download Pre-trained Model Weights
 
 Before running predictions, you must download the pre-trained model weights.
@@ -19,20 +37,20 @@ This script will automatically:
 
 To install all virtual environments and their required dependencies, run the following script:
 
-    bash install_envs_test.sh /your/custom/env/base/path
+    bash install_envs.sh /your/custom/env/base/path
 
 Arguments:
 
 - /your/custom/env/base/path: The absolute path where you want the virtual environments to be created. This directory should have sufficient available disk space (45 GB).
 
 ### Example
-    bash install_envs_test.sh /medias/db/ImagingSecurity_misc/sitcharn
+    bash install_envs.sh "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/envs"
 
 ## 3. Run predictions
 ### Predict from a Single Image
 To run inference on a single image, use the following command:
 
-    bash run_predictions_test.sh false /path/to/your/image.jpg /your/custom/env/base/path
+    bash run_predictions.sh false /path/to/your/image.jpg /your/custom/env/base/path
 
 Arguments:
 
@@ -43,13 +61,13 @@ Arguments:
 - /your/custom/env/base/path: Base directory where the virtual environments were previously installed.
 
 #### Examble:
-    bash run_predictions_test.sh false "/medias/db/ImagingSecurity_misc/Collaborations/Hermes deepfake challenge/data/dataset_deepfake/dataset_deepfake_2/fake/generation/0.jpg" /medias/db/ImagingSecurity_misc/sitcharn
+    bash run_predictions.sh false "test/id0_0000/Celeb-real_id1_0004_171.png" "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/envs"
 
 
 ### Predict from a Text File Containing Image Paths
 To run inference on a batch of images listed in a .txt file (one path per line), use:
 
-    bash run_predictions_test.sh true /path/to/your/file.txt /your/custom/env/base/path
+    bash run_predictions.sh true /path/to/your/file.txt /your/custom/env/base/path
 
 Arguments:
 
@@ -59,16 +77,17 @@ Arguments:
 Expected Format of the .txt File:
 
 Each line should contain the absolute path to a single image. For example:
-/medias/db/ImagingSecurity_misc/dataset/images/image_001.jpg
-/medias/db/ImagingSecurity_misc/dataset/images/image_002.jpg
-/medias/db/ImagingSecurity_misc/dataset/images/image_003.jpg
+
+    /medias/db/ImagingSecurity_misc/dataset/images/image_001.jpg
+    /medias/db/ImagingSecurity_misc/dataset/images/image_002.jpg
+    /medias/db/ImagingSecurity_misc/dataset/images/image_003.jpg
 
 
 - /your/custom/env/base/path: Base directory where the virtual environments were previously installed.
 
 
 #### Examble:
-    bash run_predictions_test.sh true "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif_Detector 2/data/test.txt" /medias/db/ImagingSecurity_misc/sitcharn
+    bash run_predictions.sh true "test/test.txt" "/medias/db/ImagingSecurity_misc/Collaborations/ImVerif-detector/envs"
 
 
 After execution, the final prediction results will be saved in: output/ensemble.csv

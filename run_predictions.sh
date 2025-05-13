@@ -12,7 +12,9 @@ envs_path=$3      # base path where environments are located
 
 # -------------------- Define Environments --------------------
 # Just the names of the subfolders (envs)
-declare -a env_names=("Andy" "Abdel" "Alex" "Sameer" "Amine" "CoDE" "Sahar")
+# declare -a env_names=("Andy" "Abdel" "Alex" "Sameer" "Amine" "CoDE" "Sahar")
+declare -a env_names=("Andy" "Abdel" "Alex" "Amine" "CoDE" "Sahar")
+
 
 # Scripts associated with each environment
 declare -A envs_scripts
@@ -85,6 +87,7 @@ done
 # -------------------- Final Assembly --------------------
 echo "Running model for ensemble on input: $input"
 source activate "${envs_path}/Ensemble"
+export PATH="${envs_path}/Ensemble/bin:$PATH"
 python temporary.py
 python Assembly/test.py --model_checkpoint models/ensemble/meta_classifier.pth --data_norm
 
