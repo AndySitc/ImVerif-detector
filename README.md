@@ -11,14 +11,16 @@ Color Manipulation: Captures unnatural adjustments to color and lighting.
 
 Facial Deepfakes: Identifies face-swapped or manipulated facial content.
 
-**Note**: This code is intended to run exclusively on **Linux systems**.
-
 ## Estimated Time Requirements
 - Model weights download & installation: ~5 minutes
 
 - Virtual environment setup: ~30 minutes
 
 - Single image prediction: ~2 minutes 30 seconds
+
+Please ensure that at least **45 GB** of free disk space is available before proceeding with the environment setup and model installation.
+
+**Note**: This code is intended to run exclusively on **Linux systems**.
 
 ## System Architecture
 ![System Architecture](figures/system_architecture.PNG)
@@ -28,8 +30,6 @@ The architecture illustrates the pipeline from image input to final ensemble cla
 ## 1. Download Pre-trained Model Weights
 
 Before running predictions, you must download the pre-trained model weights.
-
-Please ensure that at least **45 GB** of free disk space is available before proceeding with the environment setup and model installation.
 
 To download and install the model weights, simply run the following command from the root of the repository:
 
